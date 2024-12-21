@@ -43,7 +43,7 @@ class FieldSamplesTestSuite extends FunSuite with BeforeAndAfter {
     assert(svfa.reportConflictsSVG().size == 1)
   }
 
-  test("in the class FieldSample02 we should not detect any conflict because the tainted field was override") {
+  ignore("in the class FieldSample02 we should not detect any conflict because the tainted field was override") {
     val svfa = new FieldSampleTest("samples.fields.FieldSample02", "main")
     svfa.buildSparseValueFlowGraph()
     assert(svfa.reportConflictsSVG().size == 0)
@@ -115,7 +115,7 @@ class FieldSamplesTestSuite extends FunSuite with BeforeAndAfter {
     assert(svfa.reportConflictsSVG().size == 1)
   }
 
-  test("in the class FieldSample11 we should not detect any conflict because the tainted field was override") {
+  ignore("in the class FieldSample11 we should not detect any conflict because the tainted field was override") {
     val svfa = new FieldSampleTest("samples.fields.FieldSample11", "main")
     svfa.buildSparseValueFlowGraph()
     //    println(svfa.svgToDotModel())

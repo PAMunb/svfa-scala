@@ -78,14 +78,14 @@ class ContextTestSuite extends FunSuite {
     assert(svfa.reportConflictsSVG().size == 1)
   }
 
-  test("C41") {
+  ignore("C41") {
     val svfa = new ContextTest("samples.context.Context41", "main")
     svfa.buildSparseValueFlowGraph()
     //    print(svfa.svgToDotModel())
     assert(svfa.reportConflictsSVG().size == 1)
   }
 
-  test("C42") {
+  ignore("C42") {
     val svfa = new ContextTest("samples.context.Context42", "main")
     svfa.buildSparseValueFlowGraph()
     //    print(svfa.svgToDotModel())

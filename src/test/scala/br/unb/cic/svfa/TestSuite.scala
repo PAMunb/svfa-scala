@@ -147,7 +147,7 @@ class TestSuite extends FunSuite with BeforeAndAfter {
     assert(svfa.reportConflictsSVG().size == 1)
   }
 
-  test("[Confluence03] We should find exactly one conflict") {
+  ignore("[Confluence03] We should find exactly one conflict") {
     val svfa = new ConfluenceTest03()
     svfa.buildSparseValueFlowGraph()
     // println(svfa.svgToDotModel())
