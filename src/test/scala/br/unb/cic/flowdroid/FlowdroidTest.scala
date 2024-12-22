@@ -76,24 +76,6 @@ class FlowdroidTestSuite extends FunSuite {
     assert(svfa.reportConflictsSVG().size == 7)
   }
 
-//  test("in the class Aliasing7 we should detect 7 conflicts") {
-//    val svfa = new FlowdroidTest("securibench.micro.aliasing.Aliasing7", "doGet")
-//    svfa.buildSparseValueFlowGraph()
-//    assert(svfa.reportConflictsSVG().size == 7)
-//  }
-//
-//  test("in the class Aliasing8 we should detect 8 conflicts") {
-//    val svfa = new FlowdroidTest("securibench.micro.aliasing.Aliasing8", "doGet")
-//    svfa.buildSparseValueFlowGraph()
-//    assert(svfa.reportConflictsSVG().size == 8)
-//  }
-//
-//  test("in the class Aliasing9 we should detect 1 conflicts") {
-//    val svfa = new FlowdroidTest("securibench.micro.aliasing.Aliasing9", "doGet")
-//    svfa.buildSparseValueFlowGraph()
-//    assert(svfa.reportConflictsSVG().size == 2)
-//  }
-
   /**
    * ARRAY TESTs
    */
@@ -161,12 +143,6 @@ class FlowdroidTestSuite extends FunSuite {
   /**
    * BASIC TESTs
    */
-
-//  test("in the class Basic2 we should detect 1 conflict of a simple XSS test case") {
-//    val svfa = new FlowdroidTest("securibench.micro.basic.Basic0", "doGet")
-//    svfa.buildSparseValueFlowGraph()
-//    assert(svfa.reportConflictsSVG().size == 1)
-//  }
 
   test("in the class Basic1 we should detect 1 conflict of a simple XSS test case") {
     val svfa = new FlowdroidTest("securibench.micro.basic.Basic1", "doGet")
