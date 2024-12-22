@@ -60,7 +60,7 @@ This project integrates 2 well-known benchmarks.
 This benchmark was integrated because it is also used in the [FlowDroid Project](https://github.com/secure-software-engineering/FlowDroid) 
 and the tests cases are in `src/test/java/securibench`.
 
-> failed: 0, passed: 72, ignored: 31 of 103 test (69.90%)
+> failed: 0, passed: 71, ignored: 32 of 103 test (68.93%)
 
 - **AliasingTest** - failed: 0, passed: 4, ignored: 2 of 6 test `(66.7%)`
   - [5]
@@ -73,12 +73,12 @@ and the tests cases are in `src/test/java/securibench`.
   - [9]
   - [10]
 
-- **BasicTest** - failed: 0, passed: 39, ignored: 3 of 42 test `(92.85%)`
+- **BasicTest** - failed: 0, passed: 38, ignored: 3 of 41 test `(92.68%)`; [40] does not exist
   - [36]
   - [38]
   - [42]
 
-- **CollectionTest** - failed: 0, passed: 3, ignored: 11 of 14 test `(21.42%)`
+- **CollectionTest** - failed: 0, passed: 3, ignored: 12 of 15 test `(20%)`
   - [3]
   - [4]
   - [5]
@@ -98,7 +98,7 @@ and the tests cases are in `src/test/java/securibench`.
 - **FactoryTest** - failed: 0, passed: 2, ignored: 1 of 3 test `(66.67%)`
   - [3]
 
-- **InterTest** - failed: 0, passed:11, ignored: 4 of 14 test `(78.57%)`
+- **InterTest** - failed: 0, passed:11, ignored: 3 of 14 test `(78.57%)`
   - [6]
   - [11] - flaky
   - [12]
