@@ -1,6 +1,6 @@
 package br.unb.cic.android
 
-import br.unb.cic.android.specs.{BackFlashSpec, BeitaComBeitaContactSpec, CajinoBaiduSpec, RoidSecSpec}
+import br.unb.cic.android.specs.{BackFlashSpec, BeitaComBeitaContactSpec, CajinoBaiduSpec, ChatHookSpec, RoidSecSpec}
 import org.scalatest.FunSuite
 
 class AndroidTaintBenchSuiteTest extends FunSuite {
@@ -29,10 +29,14 @@ class AndroidTaintBenchSuiteTest extends FunSuite {
     assert(svfa.reportConflictsSVG().size == 12)
   }
 
+  test("in the APK chat_hook, we should detect 12 flow") {
+    val svfa = new AndroidTaintBenchTest("chat_hook") with ChatHookSpec
+    svfa.buildSparseValueFlowGraph()
+    assert(svfa.reportConflictsSVG().size == 12)
+  }
 
 
 
-  
 //template
   test("in the APK XXX, we should detect X flow") {
     val svfa = new AndroidTaintBenchTest("XXX") with BackFlashSpec
