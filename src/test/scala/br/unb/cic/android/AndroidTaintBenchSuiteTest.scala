@@ -1,6 +1,6 @@
 package br.unb.cic.android
 
-import br.unb.cic.android.specs.{BackFlashSpec, BeitaComBeitaContactSpec, CajinoBaiduSpec, ChatHookSpec, ChuliaSpec, DeathRingMaterialflowSpec, RoidSecSpec}
+import br.unb.cic.android.specs.{BackFlashSpec, BeitaComBeitaContactSpec, CajinoBaiduSpec, ChatHookSpec, ChuliaSpec, DeathRingMaterialflowSpec, DsencryptSampSpec, RoidSecSpec}
 import org.scalatest.FunSuite
 
 class AndroidTaintBenchSuiteTest extends FunSuite {
@@ -47,7 +47,11 @@ class AndroidTaintBenchSuiteTest extends FunSuite {
     assert(svfa.reportConflictsSVG().size == 1)
   }
 
-
+  test("in the APK dsencrypt_samp, we should detect 1 flow") {
+    val svfa = new AndroidTaintBenchTest("dsencrypt_samp") with DsencryptSampSpec
+    svfa.buildSparseValueFlowGraph()
+    assert(svfa.reportConflictsSVG().size == 1)
+  }
 
 
 
