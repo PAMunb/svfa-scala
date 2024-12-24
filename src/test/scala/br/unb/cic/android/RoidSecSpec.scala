@@ -1,8 +1,8 @@
 package br.unb.cic.android
 
-trait RoidSecSpec {
+trait RoidSecSpec extends AndroidTaintBenchTest {
 //  URL https://github.com/TaintBench/roidsec/blob/master/README.md
-  val sourceList = List(
+  override val sourceList = List(
     "<android.telephony.SmsManager: android.telephony.SmsManager getDefault()>",
     "<android.os.Environment: java.io.File getDataDirectory()>",
     "<java.lang.String: byte[] getBytes(java.lang.String)>",
@@ -45,7 +45,7 @@ trait RoidSecSpec {
     "<android.net.wifi.WifiManager: int getWifiState()>",
   )
 
-  val sinkList = List(
+  override val sinkList = List(
     "<java.io.File: boolean delete()>",
     "<android.media.MediaRecorder: void setOutputFile(java.lang.String)>",
     "<android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)>",
