@@ -1,6 +1,6 @@
 package br.unb.cic.android
 
-import br.unb.cic.android.specs.RoidSecSpec
+import br.unb.cic.android.specs.{BackFlashSpec, RoidSecSpec}
 import org.scalatest.FunSuite
 
 class AndroidTaintBenchSuiteTest extends FunSuite {
@@ -11,10 +11,10 @@ class AndroidTaintBenchSuiteTest extends FunSuite {
     assert(svfa.reportConflictsSVG().size == 1)
   }
 
-//  test("in the APK backflash, we should detect X flow") {
-//    val svfa = new AndroidTaintBenchTest("backflash")
-//    svfa.buildSparseValueFlowGraph()
-//    // println(svfa.svgToDotModel())
-//    assert(svfa.reportConflictsSVG().size == 1)
-//  }
+  test("in the APK backflash, we should detect 6 flow") {
+   val svfa = new AndroidTaintBenchTest("backflash") with BackFlashSpec
+    svfa.buildSparseValueFlowGraph()
+    // println(svfa.svgToDotModel())
+    assert(svfa.reportConflictsSVG().size == 6)
+  }
 }
