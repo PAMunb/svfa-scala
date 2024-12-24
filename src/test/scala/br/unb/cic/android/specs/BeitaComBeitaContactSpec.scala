@@ -117,7 +117,7 @@ trait BeitaComBeitaContactSpec extends AndroidTaintBenchTest {
     "<java.net.URL: java.net.URLConnection openConnection()>",
     "<android.database.sqlite.SQLiteQueryBuilder: void setTables(java.lang.String)>",
     "<java.io.DataOutputStream: void writeBytes(java.lang.String)>",
-    "<org.json.JSONObject: org.json.JSONObject put(java.lang.String,java.lang.Object)>",6
+    "<org.json.JSONObject: org.json.JSONObject put(java.lang.String,java.lang.Object)>",
     "<android.content.Context: void startActivity(android.content.Intent)>",
     "<org.apache.http.client.HttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>",
     "<android.app.Activity: void onCreate(android.os.Bundle)>",
