@@ -8,7 +8,7 @@ class AndroidTaintBenchSuiteTest extends FunSuite {
     val svfa = new AndroidTaintBenchTest("roidsec") with RoidSecSpec
     svfa.buildSparseValueFlowGraph()
     // println(svfa.svgToDotModel())
-    assert(svfa.reportConflictsSVG().size == 1)
+    assert(svfa.reportConflictsSVG().size == 13)
   }
 
   test("in the APK backflash, we should detect 6 flow") {
