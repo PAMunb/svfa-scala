@@ -3,7 +3,7 @@ package br.unb.cic.android.specs
 import br.unb.cic.android.AndroidTaintBenchTest
 
 trait RoidSecSpec extends AndroidTaintBenchTest {
-//  URL https://github.com/TaintBench/roidsec/blob/master/README.md
+
   override val sourceList = List(
     "<android.telephony.SmsManager: android.telephony.SmsManager getDefault()>",
     "<android.os.Environment: java.io.File getDataDirectory()>",
