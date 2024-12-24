@@ -1,5 +1,6 @@
 package br.unb.cic.android
 
+import br.unb.cic.android.specs.RoidSecSpec
 import org.scalatest.FunSuite
 
 class AndroidTaintBenchSuiteTest extends FunSuite {

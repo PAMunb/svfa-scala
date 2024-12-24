@@ -1,4 +1,6 @@
-package br.unb.cic.android
+package br.unb.cic.android.specs
+
+import br.unb.cic.android.AndroidTaintBenchTest
 
 trait RoidSecSpec extends AndroidTaintBenchTest {
 //  URL https://github.com/TaintBench/roidsec/blob/master/README.md

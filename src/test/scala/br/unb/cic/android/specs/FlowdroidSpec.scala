@@ -1,11 +1,4 @@
-package br.unb.cic.android
-
-import br.unb.cic.soot.JSVFATest
-import br.unb.cic.soot.graph.{SinkNode, SourceNode}
-import soot.{G, Scene}
-import soot.options.Options
-
-import scala.collection.JavaConverters._
+package br.unb.cic.android.specs
 
 trait FlowdroidSpec {
   val sourceList = List(
