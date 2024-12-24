@@ -1,6 +1,6 @@
 package br.unb.cic.android
 
-import br.unb.cic.android.specs.{BackFlashSpec, BeitaComBeitaContactSpec, CajinoBaiduSpec, ChatHookSpec, ChuliaSpec, RoidSecSpec}
+import br.unb.cic.android.specs.{BackFlashSpec, BeitaComBeitaContactSpec, CajinoBaiduSpec, ChatHookSpec, ChuliaSpec, DeathRingMaterialflowSpec, RoidSecSpec}
 import org.scalatest.FunSuite
 
 class AndroidTaintBenchSuiteTest extends FunSuite {
@@ -40,6 +40,16 @@ class AndroidTaintBenchSuiteTest extends FunSuite {
     svfa.buildSparseValueFlowGraph()
     assert(svfa.reportConflictsSVG().size == 4)
   }
+
+  test("in the APK death_ring_materialflow, we should detect 1 flow") {
+    val svfa = new AndroidTaintBenchTest("death_ring_materialflow") with DeathRingMaterialflowSpec
+    svfa.buildSparseValueFlowGraph()
+    assert(svfa.reportConflictsSVG().size == 1)
+  }
+
+
+
+
 
 //template
   test("in the APK XXX, we should detect X flow") {
