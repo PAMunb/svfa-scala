@@ -1,0 +1,4 @@
+/home/jclavo/Documents/unb/master/taint-bench/.apk
+/home/jclavo/Documents/unb/master/taint-bench/.apk
+/home/jclavo/Documents/unb/master/taint-bench/.apk
+/home/jclavo/Documents/unb/master/taint-bench/xbot_android_samp.apk
