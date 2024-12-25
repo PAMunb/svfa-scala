@@ -1,6 +1,6 @@
 package br.unb.cic.android
 
-import br.unb.cic.android.specs.{BackFlashSpec, BeitaComBeitaContactSpec, CajinoBaiduSpec, ChatHookSpec, ChuliaSpec, DeathRingMaterialflowSpec, DsencryptSampSpec, ExprespamSpec, FakeappstoreSpec, FakebankAndroidSampSpec, FakedaumSpec, FakemartSpec, FakeplaySpec, FaketaobaoSpec, GodwonSampSpec, HummingbadAndroidSampSpec, RoidSecSpec}
+import br.unb.cic.android.specs.{BackFlashSpec, BeitaComBeitaContactSpec, CajinoBaiduSpec, ChatHookSpec, ChuliaSpec, DeathRingMaterialflowSpec, DsencryptSampSpec, ExprespamSpec, FakeappstoreSpec, FakebankAndroidSampSpec, FakedaumSpec, FakemartSpec, FakeplaySpec, FaketaobaoSpec, GodwonSampSpec, HummingbadAndroidSampSpec, JollyservSpec, RoidSecSpec}
 import org.scalatest.FunSuite
 
 class AndroidTaintBenchSuiteTest extends FunSuite {
@@ -105,6 +105,12 @@ class AndroidTaintBenchSuiteTest extends FunSuite {
     val svfa = new AndroidTaintBenchTest("hummingbad_android_samp") with HummingbadAndroidSampSpec
     svfa.buildSparseValueFlowGraph()
     assert(svfa.reportConflictsSVG().size == 2)
+  }
+
+  test("in the APK jollyserv, we should detect 1 flows") {
+    val svfa = new AndroidTaintBenchTest("jollyserv") with JollyservSpec
+    svfa.buildSparseValueFlowGraph()
+    assert(svfa.reportConflictsSVG().size == 1)
   }
 
 
