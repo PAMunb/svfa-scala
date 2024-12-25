@@ -1,6 +1,6 @@
 package br.unb.cic.android
 
-import br.unb.cic.android.specs.{BackFlashSpec, BeitaComBeitaContactSpec, CajinoBaiduSpec, ChatHookSpec, ChuliaSpec, DeathRingMaterialflowSpec, DsencryptSampSpec, ExprespamSpec, FakeappstoreSpec, FakebankAndroidSampSpec, FakedaumSpec, FakemartSpec, FakeplaySpec, FaketaobaoSpec, GodwonSampSpec, HummingbadAndroidSampSpec, JollyservSpec, OverlayAndroidSampSpec, Overlaylocker2AndroidSampSpec, PhospySpec, ProxySampSpec, RemoteControlSmackSpec, RepaneSpec, RoidSecSpec, SamsapoSpec, SaveMeSpec, ScipiexSpec, SlockerAndroidSampSpec, SmsGoogleSpec, SmsSendLockerQqmagicSpec}
+import br.unb.cic.android.specs.{BackFlashSpec, BeitaComBeitaContactSpec, CajinoBaiduSpec, ChatHookSpec, ChuliaSpec, DeathRingMaterialflowSpec, DsencryptSampSpec, ExprespamSpec, FakeappstoreSpec, FakebankAndroidSampSpec, FakedaumSpec, FakemartSpec, FakeplaySpec, FaketaobaoSpec, GodwonSampSpec, HummingbadAndroidSampSpec, JollyservSpec, OverlayAndroidSampSpec, Overlaylocker2AndroidSampSpec, PhospySpec, ProxySampSpec, RemoteControlSmackSpec, RepaneSpec, RoidSecSpec, SamsapoSpec, SaveMeSpec, ScipiexSpec, SlockerAndroidSampSpec, SmsGoogleSpec, SmsSendLockerQqmagicSpec, SmssendPackageInstallerSpec}
 import org.scalatest.FunSuite
 
 class AndroidTaintBenchSuiteTest extends FunSuite {
@@ -184,6 +184,12 @@ class AndroidTaintBenchSuiteTest extends FunSuite {
     val svfa = new AndroidTaintBenchTest("sms_send_locker_qqmagic") with SmsSendLockerQqmagicSpec
     svfa.buildSparseValueFlowGraph()
     assert(svfa.reportConflictsSVG().size == 6)
+  }
+
+  test("in the APK smssend_packageInstaller, we should detect 5 flows") {
+    val svfa = new AndroidTaintBenchTest("smssend_packageInstaller") with SmssendPackageInstallerSpec
+    svfa.buildSparseValueFlowGraph()
+    assert(svfa.reportConflictsSVG().size == 5)
   }
 
 
