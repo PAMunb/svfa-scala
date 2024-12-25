@@ -4,12 +4,6 @@ import br.unb.cic.android.specs.{BackFlashSpec, BeitaComBeitaContactSpec, Cajino
 import org.scalatest.FunSuite
 
 class AndroidTaintBenchSuiteTest extends FunSuite {
-  test("in the APK Roidsec, we should detect 1 flow") {
-    val svfa = new AndroidTaintBenchTest("roidsec") with RoidSecSpec
-    svfa.buildSparseValueFlowGraph()
-    // println(svfa.svgToDotModel())
-    assert(svfa.reportConflictsSVG().size == 13)
-  }
 
   test("in the APK backflash, we should detect 6 flow") {
    val svfa = new AndroidTaintBenchTest("backflash") with BackFlashSpec
@@ -149,11 +143,27 @@ class AndroidTaintBenchSuiteTest extends FunSuite {
     assert(svfa.reportConflictsSVG().size == 1)
   }
 
+  test("in the APK Roidsec, we should detect 1 flow") {
+    val svfa = new AndroidTaintBenchTest("roidsec") with RoidSecSpec
+    svfa.buildSparseValueFlowGraph()
+    // println(svfa.svgToDotModel())
+    assert(svfa.reportConflictsSVG().size == 13)
+  }
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+  
 
 //template
   test("in the APK XXX, we should detect X flows") {
