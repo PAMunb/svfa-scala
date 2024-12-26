@@ -5,7 +5,7 @@ import org.scalatest.FunSuite
 
 class AndroidTaintBenchSuiteTest extends FunSuite {
 
-  test("in the APK backflash, we should detect 6 flow") {
+  test("in the APK backflash, we should detect 13 flow") {
    val svfa = new AndroidTaintBenchTest("backflash") with BackFlashSpec
     svfa.buildSparseValueFlowGraph()
     assert(svfa.reportConflictsSVG().size == 13)
