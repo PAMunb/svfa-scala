@@ -1,6 +1,6 @@
 package br.unb.cic.android.specs
 
-import br.unb.cic.android.AndroidTaintBenchTest
+import br.unb.cic.android.FlowdroidSpec
 
 trait SmssendPackageInstallerSpec extends FlowdroidSpec {
 //  URL https://github.com/TaintBench/smssend_packageInstaller/blob/master/README.md

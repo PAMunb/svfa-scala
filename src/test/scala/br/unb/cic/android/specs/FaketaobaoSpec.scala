@@ -1,6 +1,6 @@
 package br.unb.cic.android.specs
 
-import br.unb.cic.android.AndroidTaintBenchTest
+import br.unb.cic.android.FlowdroidSpec
 
 trait FaketaobaoSpec extends FlowdroidSpec {
 //  URL https://github.com/TaintBench/faketaobao/blob/master/README.md

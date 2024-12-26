@@ -1,6 +1,6 @@
 package br.unb.cic.android.specs
 
-import br.unb.cic.android.AndroidTaintBenchTest
+import br.unb.cic.android.FlowdroidSpec
 
 trait TheInterviewMovieShowSpec extends FlowdroidSpec {
 //  URL https://github.com/TaintBench/the_interview_movieshow/blob/master/README.md

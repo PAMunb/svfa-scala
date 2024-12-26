@@ -1,6 +1,6 @@
 package br.unb.cic.android.specs
 
-import br.unb.cic.android.AndroidTaintBenchTest
+import br.unb.cic.android.FlowdroidSpec
 
 trait FakeappstoreSpec extends FlowdroidSpec {
 //  URL https://github.com/TaintBench/fakeappstore/blob/master/README.md

@@ -1,6 +1,6 @@
 package br.unb.cic.android.specs
 
-import br.unb.cic.android.AndroidTaintBenchTest
+import br.unb.cic.android.FlowdroidSpec
 
 trait SmsSendLockerQqmagicSpec extends FlowdroidSpec {
 //  URL https://github.com/TaintBench/sms_send_locker_qqmagic/blob/master/README.md

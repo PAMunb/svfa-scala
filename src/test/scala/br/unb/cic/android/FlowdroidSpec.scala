@@ -1,4 +1,4 @@
-package br.unb.cic.android.specs
+package br.unb.cic.android
 
 trait FlowdroidSpec {
   val sourceList = List(

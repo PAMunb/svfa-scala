@@ -1,6 +1,6 @@
 package br.unb.cic.android.specs
 
-import br.unb.cic.android.AndroidTaintBenchTest
+import br.unb.cic.android.FlowdroidSpec
 
 trait RemoteControlSmackSpec extends FlowdroidSpec {
 //  URL https://github.com/TaintBench/remote_control_smack/blob/master/README.md

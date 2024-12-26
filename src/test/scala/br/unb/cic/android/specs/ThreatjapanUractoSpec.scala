@@ -1,6 +1,6 @@
 package br.unb.cic.android.specs
 
-import br.unb.cic.android.AndroidTaintBenchTest
+import br.unb.cic.android.FlowdroidSpec
 
 trait ThreatjapanUractoSpec extends FlowdroidSpec {
 //  URL https://github.com/TaintBench/threatjapan_uracto/blob/master/README.md

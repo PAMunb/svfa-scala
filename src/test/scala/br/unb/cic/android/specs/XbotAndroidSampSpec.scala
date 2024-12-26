@@ -1,6 +1,6 @@
 package br.unb.cic.android.specs
 
-import br.unb.cic.android.AndroidTaintBenchTest
+import br.unb.cic.android.FlowdroidSpec
 
 trait XbotAndroidSampSpec extends FlowdroidSpec {
 //  URL https://github.com/TaintBench/xbot_android_samp/blob/master/README.md
