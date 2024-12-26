@@ -2,7 +2,7 @@ package br.unb.cic.android.specs
 
 import br.unb.cic.android.AndroidTaintBenchTest
 
-trait JollyservSpec extends AndroidTaintBenchTest {
+trait JollyservSpec extends FlowdroidSpec {
 //  URL https://github.com/TaintBench/jollyserv/blob/master/README.md
   override val sourceList = List(
     "<java.lang.Class: java.lang.reflect.Field[] getFields()>",

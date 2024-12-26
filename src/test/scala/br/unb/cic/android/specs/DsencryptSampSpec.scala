@@ -2,7 +2,7 @@ package br.unb.cic.android.specs
 
 import br.unb.cic.android.AndroidTaintBenchTest
 
-trait DsencryptSampSpec extends AndroidTaintBenchTest {
+trait DsencryptSampSpec extends FlowdroidSpec {
 //  URL https://github.com/TaintBench/dsencrypt_samp/blob/master/README.md
   override val sourceList = List(
     "<java.io.File: boolean delete()>",

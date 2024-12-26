@@ -2,7 +2,7 @@ package br.unb.cic.android.specs
 
 import br.unb.cic.android.AndroidTaintBenchTest
 
-trait SmssilienceFakeVertuSpec extends AndroidTaintBenchTest {
+trait SmssilienceFakeVertuSpec extends FlowdroidSpec {
 //  URL https://github.com/TaintBench/smssilience_fake_vertu/blob/master/README.md
   override val sourceList = List(
     "<android.telephony.TelephonyManager: java.lang.String getLine1Number()>",

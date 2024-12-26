@@ -2,7 +2,7 @@ package br.unb.cic.android.specs
 
 import br.unb.cic.android.AndroidTaintBenchTest
 
-trait FakedaumSpec extends AndroidTaintBenchTest {
+trait FakedaumSpec extends FlowdroidSpec {
 //  URL https://github.com/TaintBench/fakedaum/blob/master/README.md
   override val sourceList = List(
     "<org.apache.http.util.EntityUtils: java.lang.String getContentCharSet(org.apache.http.HttpEntity)>",

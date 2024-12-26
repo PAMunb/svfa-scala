@@ -2,7 +2,7 @@ package br.unb.cic.android.specs
 
 import br.unb.cic.android.AndroidTaintBenchTest
 
-trait SmsstealerKysnAssassincreedAndroidSampSpec extends AndroidTaintBenchTest {
+trait SmsstealerKysnAssassincreedAndroidSampSpec extends FlowdroidSpec {
 //  URL https://github.com/TaintBench/smsstealer_kysn_assassincreed_android_samp/blob/master/README.md
   override val sourceList = List(
     "<java.io.BufferedReader: java.lang.String readLine()>",

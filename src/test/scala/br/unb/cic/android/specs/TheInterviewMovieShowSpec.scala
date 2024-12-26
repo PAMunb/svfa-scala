@@ -2,7 +2,7 @@ package br.unb.cic.android.specs
 
 import br.unb.cic.android.AndroidTaintBenchTest
 
-trait TheInterviewMovieShowSpec extends AndroidTaintBenchTest {
+trait TheInterviewMovieShowSpec extends FlowdroidSpec {
 //  URL https://github.com/TaintBench/the_interview_movieshow/blob/master/README.md
   override val sourceList = List(
     "<android.os.Environment: java.io.File getExternalStorageDirectory()>",

@@ -2,7 +2,7 @@ package br.unb.cic.android.specs
 
 import br.unb.cic.android.AndroidTaintBenchTest
 
-trait GodwonSampSpec extends AndroidTaintBenchTest {
+trait GodwonSampSpec extends FlowdroidSpec {
 //  URL https://github.com/TaintBench/roidsec/blob/master/README.md
   override val sourceList = List(
     "<android.telephony.TelephonyManager: java.lang.String getLine1Number()>",

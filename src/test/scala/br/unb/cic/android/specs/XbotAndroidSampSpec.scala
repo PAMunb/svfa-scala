@@ -2,7 +2,7 @@ package br.unb.cic.android.specs
 
 import br.unb.cic.android.AndroidTaintBenchTest
 
-trait XbotAndroidSampSpec extends AndroidTaintBenchTest {
+trait XbotAndroidSampSpec extends FlowdroidSpec {
 //  URL https://github.com/TaintBench/xbot_android_samp/blob/master/README.md
   override val sourceList = List(
     "<java.lang.Class: java.lang.reflect.Field[] getFields()>",

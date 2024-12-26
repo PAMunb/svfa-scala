@@ -2,7 +2,7 @@ package br.unb.cic.android.specs
 
 import br.unb.cic.android.AndroidTaintBenchTest
 
-trait ScipiexSpec extends AndroidTaintBenchTest {
+trait ScipiexSpec extends FlowdroidSpec {
 //  URL https://github.com/TaintBench/scipiex/blob/master/README.md
   override val sourceList = List(
     "<org.apache.http.util.EntityUtils: java.lang.String getContentCharSet(org.apache.http.HttpEntity)>",

@@ -2,7 +2,7 @@ package br.unb.cic.android.specs
 
 import br.unb.cic.android.AndroidTaintBenchTest
 
-trait ExprespamSpec extends AndroidTaintBenchTest {
+trait ExprespamSpec extends FlowdroidSpec {
 //  URL https://github.com/TaintBench/exprespam/blob/master/README.md
   override val sourceList = List(
     "<android.telephony.TelephonyManager: java.lang.String getLine1Number()>",

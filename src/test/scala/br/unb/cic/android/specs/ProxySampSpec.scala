@@ -2,7 +2,7 @@ package br.unb.cic.android.specs
 
 import br.unb.cic.android.AndroidTaintBenchTest
 
-trait ProxySampSpec extends AndroidTaintBenchTest {
+trait ProxySampSpec extends FlowdroidSpec {
 //  URL https://github.com/TaintBench/proxy_samp/blob/master/README.md
   override val sourceList = List(
     "<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>",

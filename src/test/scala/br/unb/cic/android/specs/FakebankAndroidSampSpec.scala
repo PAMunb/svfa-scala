@@ -2,7 +2,7 @@ package br.unb.cic.android.specs
 
 import br.unb.cic.android.AndroidTaintBenchTest
 
-trait FakebankAndroidSampSpec extends AndroidTaintBenchTest {
+trait FakebankAndroidSampSpec extends FlowdroidSpec {
 //  URL https://github.com/TaintBench/fakebank_android_samp/blob/master/README.md
   override val sourceList = List(
     "<org.json.JSONObject: int getInt(java.lang.String)>",

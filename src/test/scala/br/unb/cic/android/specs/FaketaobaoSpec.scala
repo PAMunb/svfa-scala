@@ -2,7 +2,7 @@ package br.unb.cic.android.specs
 
 import br.unb.cic.android.AndroidTaintBenchTest
 
-trait FaketaobaoSpec extends AndroidTaintBenchTest {
+trait FaketaobaoSpec extends FlowdroidSpec {
 //  URL https://github.com/TaintBench/faketaobao/blob/master/README.md
   override val sourceList = List(
     "<android.os.Environment: java.io.File getExternalStorageDirectory()>",

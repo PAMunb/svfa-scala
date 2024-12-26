@@ -2,7 +2,7 @@ package br.unb.cic.android.specs
 
 import br.unb.cic.android.AndroidTaintBenchTest
 
-trait CajinoBaiduSpec extends AndroidTaintBenchTest {
+trait CajinoBaiduSpec extends FlowdroidSpec {
 
   override val sourceList = List(
     "<org.apache.http.util.EntityUtils: java.lang.String getContentCharSet(org.apache.http.HttpEntity)>",

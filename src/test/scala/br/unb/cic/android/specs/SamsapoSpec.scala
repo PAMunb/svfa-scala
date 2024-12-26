@@ -2,7 +2,7 @@ package br.unb.cic.android.specs
 
 import br.unb.cic.android.AndroidTaintBenchTest
 
-trait SamsapoSpec extends AndroidTaintBenchTest {
+trait SamsapoSpec extends FlowdroidSpec {
 //  URL https://github.com/TaintBench/samsapo/blob/master/README.md
   override val sourceList = List(
     "<java.io.BufferedReader: java.lang.String readLine()>",

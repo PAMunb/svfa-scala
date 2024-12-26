@@ -2,7 +2,7 @@ package br.unb.cic.android.specs
 
 import br.unb.cic.android.AndroidTaintBenchTest
 
-trait RemoteControlSmackSpec extends AndroidTaintBenchTest {
+trait RemoteControlSmackSpec extends FlowdroidSpec {
 //  URL https://github.com/TaintBench/remote_control_smack/blob/master/README.md
   override val sourceList = List(
     "<android.view.ScaleGestureDetector: float getFocusX()>",

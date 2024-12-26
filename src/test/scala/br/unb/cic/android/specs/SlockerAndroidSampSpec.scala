@@ -2,7 +2,7 @@ package br.unb.cic.android.specs
 
 import br.unb.cic.android.AndroidTaintBenchTest
 
-trait SlockerAndroidSampSpec extends AndroidTaintBenchTest {
+trait SlockerAndroidSampSpec extends FlowdroidSpec {
 //  URL https://github.com/TaintBench/slocker_android_samp/blob/master/README.md
   override val sourceList = List(
     "<java.io.BufferedReader: java.lang.String readLine()>",

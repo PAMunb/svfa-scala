@@ -2,7 +2,7 @@ package br.unb.cic.android.specs
 
 import br.unb.cic.android.AndroidTaintBenchTest
 
-trait ChuliaSpec extends AndroidTaintBenchTest {
+trait ChuliaSpec extends FlowdroidSpec {
 //  URL https://github.com/TaintBench/roidsec/blob/master/README.md
   override val sourceList = List(
     "<java.lang.String: byte[] getBytes(java.lang.String)>",

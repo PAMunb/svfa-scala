@@ -2,7 +2,7 @@ package br.unb.cic.android.specs
 
 import br.unb.cic.android.AndroidTaintBenchTest
 
-trait ChatHookSpec extends AndroidTaintBenchTest {
+trait ChatHookSpec extends FlowdroidSpec {
 //  URL https://github.com/TaintBench/chat_hook/blob/master/README.md
 
   override val sourceList = List(

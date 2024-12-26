@@ -2,7 +2,7 @@ package br.unb.cic.android.specs
 
 import br.unb.cic.android.AndroidTaintBenchTest
 
-trait HummingbadAndroidSampSpec extends AndroidTaintBenchTest {
+trait HummingbadAndroidSampSpec extends FlowdroidSpec {
 //  URL https://github.com/TaintBench/hummingbad_android_samp/blob/master/README.md
   override val sourceList = List(
     "<android.view.View: int getWidth()>",

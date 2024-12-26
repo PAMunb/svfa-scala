@@ -2,7 +2,7 @@ package br.unb.cic.android.specs
 
 import br.unb.cic.android.AndroidTaintBenchTest
 
-trait BeitaComBeitaContactSpec extends AndroidTaintBenchTest {
+trait BeitaComBeitaContactSpec extends FlowdroidSpec {
 
   override val sourceList = List(
     "<org.json.JSONObject: int getInt(java.lang.String)>",
