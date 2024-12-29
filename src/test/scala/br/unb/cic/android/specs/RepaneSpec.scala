@@ -1,8 +1,8 @@
 package br.unb.cic.android.specs
 
-import br.unb.cic.android.FlowdroidSpec
+import br.unb.cic.android.TaintBenchSpec
 
-trait RepaneSpec extends FlowdroidSpec {
+trait RepaneSpec extends TaintBenchSpec {
 //  URL https://github.com/TaintBench/repane/blob/master/README.md
   override val sourceList = List(
     "<android.os.Environment: java.io.File getExternalStorageDirectory()>",

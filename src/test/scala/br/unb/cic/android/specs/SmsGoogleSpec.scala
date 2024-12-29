@@ -1,8 +1,8 @@
 package br.unb.cic.android.specs
 
-import br.unb.cic.android.FlowdroidSpec
+import br.unb.cic.android.TaintBenchSpec
 
-trait SmsGoogleSpec extends FlowdroidSpec {
+trait SmsGoogleSpec extends TaintBenchSpec {
 //  URL https://github.com/TaintBench/sms_google/blob/master/README.md
   override val sourceList = List(
     "<android.telephony.SmsManager: android.telephony.SmsManager getDefault()>",

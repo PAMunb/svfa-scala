@@ -1,8 +1,8 @@
 package br.unb.cic.android.specs
 
-import br.unb.cic.android.FlowdroidSpec
+import br.unb.cic.android.TaintBenchSpec
 
-trait Overlaylocker2AndroidSampSpec extends FlowdroidSpec {
+trait Overlaylocker2AndroidSampSpec extends TaintBenchSpec {
 //  URL https://github.com/TaintBench/overlaylocker2_android_samp/blob/master/README.md
   override val sourceList = List(
     "<android.view.View: int getWidth()>",

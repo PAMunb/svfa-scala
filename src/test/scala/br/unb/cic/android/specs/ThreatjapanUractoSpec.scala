@@ -1,8 +1,8 @@
 package br.unb.cic.android.specs
 
-import br.unb.cic.android.FlowdroidSpec
+import br.unb.cic.android.TaintBenchSpec
 
-trait ThreatjapanUractoSpec extends FlowdroidSpec {
+trait ThreatjapanUractoSpec extends TaintBenchSpec {
 //  URL https://github.com/TaintBench/threatjapan_uracto/blob/master/README.md
   override val sourceList = List(
     "<java.lang.String: byte[] getBytes(java.lang.String)>",

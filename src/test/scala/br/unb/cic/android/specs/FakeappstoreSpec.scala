@@ -1,8 +1,8 @@
 package br.unb.cic.android.specs
 
-import br.unb.cic.android.FlowdroidSpec
+import br.unb.cic.android.TaintBenchSpec
 
-trait FakeappstoreSpec extends FlowdroidSpec {
+trait FakeappstoreSpec extends TaintBenchSpec {
 //  URL https://github.com/TaintBench/fakeappstore/blob/master/README.md
   override val sourceList = List(
     "<javax.crypto.SecretKeyFactory: javax.crypto.SecretKeyFactory getInstance(java.lang.String)>",

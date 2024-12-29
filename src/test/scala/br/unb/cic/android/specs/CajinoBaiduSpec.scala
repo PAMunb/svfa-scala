@@ -1,8 +1,8 @@
 package br.unb.cic.android.specs
 
-import br.unb.cic.android.FlowdroidSpec
+import br.unb.cic.android.TaintBenchSpec
 
-trait CajinoBaiduSpec extends FlowdroidSpec {
+trait CajinoBaiduSpec extends TaintBenchSpec {
 
   override val sourceList = List(
     "<org.apache.http.util.EntityUtils: java.lang.String getContentCharSet(org.apache.http.HttpEntity)>",

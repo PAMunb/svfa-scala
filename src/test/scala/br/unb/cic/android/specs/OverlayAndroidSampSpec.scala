@@ -1,8 +1,8 @@
 package br.unb.cic.android.specs
 
-import br.unb.cic.android.FlowdroidSpec
+import br.unb.cic.android.TaintBenchSpec
 
-trait OverlayAndroidSampSpec extends FlowdroidSpec {
+trait OverlayAndroidSampSpec extends TaintBenchSpec {
 //  URL https://github.com/TaintBench/overlay_android_samp/blob/master/README.md
   override val sourceList = List(
     "<android.view.View: int getWidth()>",

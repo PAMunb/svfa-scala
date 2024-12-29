@@ -1,8 +1,8 @@
 package br.unb.cic.android.specs
 
-import br.unb.cic.android.FlowdroidSpec
+import br.unb.cic.android.TaintBenchSpec
 
-trait PhospySpec extends FlowdroidSpec {
+trait PhospySpec extends TaintBenchSpec {
 //  URL https://github.com/TaintBench/phospy/blob/master/README.md
   override val sourceList = List(
     "<java.lang.Thread: java.lang.String getName()>",

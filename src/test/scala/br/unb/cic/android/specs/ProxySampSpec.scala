@@ -1,8 +1,8 @@
 package br.unb.cic.android.specs
 
-import br.unb.cic.android.FlowdroidSpec
+import br.unb.cic.android.TaintBenchSpec
 
-trait ProxySampSpec extends FlowdroidSpec {
+trait ProxySampSpec extends TaintBenchSpec {
 //  URL https://github.com/TaintBench/proxy_samp/blob/master/README.md
   override val sourceList = List(
     "<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>",

@@ -1,8 +1,8 @@
 package br.unb.cic.android.specs
 
-import br.unb.cic.android.FlowdroidSpec
+import br.unb.cic.android.TaintBenchSpec
 
-trait FakemartSpec extends FlowdroidSpec {
+trait FakemartSpec extends TaintBenchSpec {
 //  URL https://github.com/TaintBench/fakemart/blob/master/README.md
   override val sourceList = List(
     "<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>",

@@ -1,8 +1,8 @@
 package br.unb.cic.android.specs
 
-import br.unb.cic.android.FlowdroidSpec
+import br.unb.cic.android.TaintBenchSpec
 
-trait XbotAndroidSampSpec extends FlowdroidSpec {
+trait XbotAndroidSampSpec extends TaintBenchSpec {
 //  URL https://github.com/TaintBench/xbot_android_samp/blob/master/README.md
   override val sourceList = List(
     "<java.lang.Class: java.lang.reflect.Field[] getFields()>",

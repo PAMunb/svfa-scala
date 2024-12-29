@@ -1,8 +1,8 @@
 package br.unb.cic.android.specs
 
-import br.unb.cic.android.FlowdroidSpec
+import br.unb.cic.android.TaintBenchSpec
 
-trait SmssendPackageInstallerSpec extends FlowdroidSpec {
+trait SmssendPackageInstallerSpec extends TaintBenchSpec {
 //  URL https://github.com/TaintBench/smssend_packageInstaller/blob/master/README.md
   override val sourceList = List(
     "<org.json.JSONObject: int getInt(java.lang.String)>",

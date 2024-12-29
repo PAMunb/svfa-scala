@@ -1,8 +1,8 @@
 package br.unb.cic.android.specs
 
-import br.unb.cic.android.FlowdroidSpec
+import br.unb.cic.android.TaintBenchSpec
 
-trait SmsSendLockerQqmagicSpec extends FlowdroidSpec {
+trait SmsSendLockerQqmagicSpec extends TaintBenchSpec {
 //  URL https://github.com/TaintBench/sms_send_locker_qqmagic/blob/master/README.md
   override val sourceList = List(
     "<android.telephony.SmsManager: android.telephony.SmsManager getDefault()>",

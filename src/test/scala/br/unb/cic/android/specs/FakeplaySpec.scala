@@ -1,8 +1,8 @@
 package br.unb.cic.android.specs
 
-import br.unb.cic.android.FlowdroidSpec
+import br.unb.cic.android.TaintBenchSpec
 
-trait FakeplaySpec extends FlowdroidSpec {
+trait FakeplaySpec extends TaintBenchSpec {
 //  URL https://github.com/TaintBench/fakeplay/blob/master/README.md
   override val sourceList = List(
     "<java.lang.System: java.lang.String getProperty(java.lang.String)>",

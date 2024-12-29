@@ -1,8 +1,8 @@
 package br.unb.cic.android.specs
 
-import br.unb.cic.android.FlowdroidSpec
+import br.unb.cic.android.TaintBenchSpec
 
-trait RoidSecSpec extends FlowdroidSpec {
+trait RoidSecSpec extends TaintBenchSpec {
 
   override val sourceList = List(
     "<android.telephony.SmsManager: android.telephony.SmsManager getDefault()>",

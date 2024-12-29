@@ -1,8 +1,8 @@
 package br.unb.cic.android.specs
 
-import br.unb.cic.android.FlowdroidSpec
+import br.unb.cic.android.TaintBenchSpec
 
-trait DeathRingMaterialflowSpec extends FlowdroidSpec {
+trait DeathRingMaterialflowSpec extends TaintBenchSpec {
 //  URL https://github.com/TaintBench/death_ring_materialflow/blob/master/README.md
   override val sourceList = List(
     "<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>",

@@ -1,8 +1,8 @@
 package br.unb.cic.android.specs
 
-import br.unb.cic.android.FlowdroidSpec
+import br.unb.cic.android.TaintBenchSpec
 
-trait TetusSpec extends FlowdroidSpec {
+trait TetusSpec extends TaintBenchSpec {
 //  URL https://github.com/TaintBench/tetus/blob/master/README.md
   override val sourceList = List(
     "<android.telephony.SmsManager: android.telephony.SmsManager getDefault()>",

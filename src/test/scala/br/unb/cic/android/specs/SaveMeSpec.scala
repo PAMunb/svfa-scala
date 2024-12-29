@@ -1,8 +1,8 @@
 package br.unb.cic.android.specs
 
-import br.unb.cic.android.FlowdroidSpec
+import br.unb.cic.android.TaintBenchSpec
 
-trait SaveMeSpec extends FlowdroidSpec {
+trait SaveMeSpec extends TaintBenchSpec {
 //  URL https://github.com/TaintBench/save_me/blob/master/README.md
   override val sourceList = List(
     "<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>",

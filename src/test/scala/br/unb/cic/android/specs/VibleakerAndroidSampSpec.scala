@@ -1,8 +1,8 @@
 package br.unb.cic.android.specs
 
-import br.unb.cic.android.FlowdroidSpec
+import br.unb.cic.android.TaintBenchSpec
 
-trait VibleakerAndroidSampSpec extends FlowdroidSpec {
+trait VibleakerAndroidSampSpec extends TaintBenchSpec {
 //  URL https://github.com/TaintBench/vibleaker_android_samp/blob/master/README.md
   override val sourceList = List(
     "<android.view.View: int getWidth()>",

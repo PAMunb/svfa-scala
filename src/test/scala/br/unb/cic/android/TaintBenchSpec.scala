@@ -1,6 +1,6 @@
 package br.unb.cic.android
 
-trait FlowdroidSpec {
+trait TaintBenchSpec {
   val sourceList = List(
       "<javax.servlet.ServletRequest: java.lang.String getParameter(java.lang.String)>",
       "<org.springframework.security.config.http.CsrfBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition getCsrfLogoutHandler)>",

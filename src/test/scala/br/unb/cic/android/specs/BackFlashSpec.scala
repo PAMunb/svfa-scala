@@ -1,8 +1,8 @@
 package br.unb.cic.android.specs
 
-import br.unb.cic.android.FlowdroidSpec
+import br.unb.cic.android.TaintBenchSpec
 
-trait BackFlashSpec extends FlowdroidSpec {
+trait BackFlashSpec extends TaintBenchSpec {
 
   override val sourceList = List(
     "<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>",

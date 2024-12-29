@@ -1,8 +1,8 @@
 package br.unb.cic.android.specs
 
-import br.unb.cic.android.FlowdroidSpec
+import br.unb.cic.android.TaintBenchSpec
 
-trait StelsFlashplayerAndroidUpdateSpec extends FlowdroidSpec {
+trait StelsFlashplayerAndroidUpdateSpec extends TaintBenchSpec {
 //  URL https://github.com/TaintBench/stels_flashplayer_android_update/blob/master/README.md
   override val sourceList = List(
     "<android.telephony.SmsManager: android.telephony.SmsManager getDefault()>",

@@ -1,8 +1,8 @@
 package br.unb.cic.android.specs
 
-import br.unb.cic.android.FlowdroidSpec
+import br.unb.cic.android.TaintBenchSpec
 
-trait ChatHookSpec extends FlowdroidSpec {
+trait ChatHookSpec extends TaintBenchSpec {
 //  URL https://github.com/TaintBench/chat_hook/blob/master/README.md
 
   override val sourceList = List(
