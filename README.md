@@ -117,11 +117,49 @@ and the tests cases are in `src/test/java/securibench`.
 [Taintbench](https://github.com/TaintBench/TaintBench/releases/download/TaintBenchSuite/TaintBench.zip) contains a set o Android Apks that are old malware apps.
 We have created a file `taintbench.properties` in `src/test/resources` to set the configurations.
 
-> failed: ?, passed: 1, ignored: ? of 39 test (?%)
-
-- [Roidsec]
-- [ ]
-- [ ]
+> failed: 38, passed: 1, ignored: 0 of 39 test (2.56%)
+> 
+|                    APK                     | Expected | Actual | Status  |
+|:------------------------------------------:|:--------:|:------:|:-------:|
+|                 backflash                  |    13    |   20   | FAILED  |
+|          beita_com_beita_contact           |    3     |   14   | FAILED  |
+|                cajino_baidu                |    12    |   95   | FAILED  |
+|                 chat_hook                  |    12    |   18   | FAILED  |
+|                   chulia                   |    4     |   0    | FAILED  |
+|          death_ring_materialflow           |    1     |   45   | FAILED  |
+|               dsencrypt_samp               |    1     |   2    | FAILED  |
+|                 exprespam                  |    2     |   0    | FAILED  |
+|                fakeappstore                |    3     |   0    | FAILED  |
+|           fakebank_android_samp            |    5     |   6    | FAILED  |
+|                  fakedaum                  |    2     |   10   | FAILED  |
+|                  fakemart                  |    2     |   0    | FAILED  |
+|                  fakeplay                  |    2     |   15   | FAILED  |
+|                 faketaobao                 |    4     |   0    | FAILED  |
+|                godwon_samp                 |    6     |   0    | FAILED  |
+|          hummingbad_android_samp           |    2     |   23   | FAILED  |
+|                 jollyserv                  |    1     |   7    | FAILED  |
+|            overlay_android_samp            |    4     |   8    | FAILED  |
+|        overlaylocker2_android_samp         |    7     |   34   | FAILED  |
+|                   phospy                   |    2     |   1    | FAILED  |
+|                 proxy_samp                 |    17    |   20   | FAILED  |
+|            remote_control_smack            |    17    |   5    | FAILED  |
+|                   repane                   |    1     |   0    | FAILED  |
+|                  Roidsec                   |    6     |   1    | FAILED  |
+|                  samsapo                   |    4     |   0    | FAILED  |
+|                  save_me                   |    25    |   15   | FAILED  |
+|                  scipiex                   |    3     |   0    | FAILED  |
+|            slocker_android_samp            |    5     |   0    | FAILED  |
+|                 sms_google                 |    4     |   13   | FAILED  |
+|          sms_send_locker_qqmagic           |    6     |   9    | FAILED  |
+|          smssend_packageInstaller          |    5     |   46   | FAILED  |
+|           smssilience_fake_vertu           |    2     |   2    | PASSED  |
+| smsstealer_kysn_assassincreed_android_samp |    5     |   1    | FAILED  |
+|      stels_flashplayer_android_update      |    3     |   19   | FAILED  |
+|                   tetus                    |    2     |   9    | FAILED  |
+|          the_interview_movieshow           |    1     |   0    | FAILED  |
+|             threatjapan_uracto             |    2     |   0    | FAILED  |
+|           vibleaker_android_samp           |    4     |   5    | FAILED  |
+|             xbot_android_samp              |    3     |   8    | FAILED  |
 
 
 ## Tasks
