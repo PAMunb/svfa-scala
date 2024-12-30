@@ -165,7 +165,9 @@ We have created a file `taintbench.properties` in `src/test/resources` to set th
 
 ## Tasks
 ### WIP
-- [ ] Finish integration of Taintbench.
+- [ ] Integration of Taintbench.
+
+### TO-DO
 - [ ] Add set up project documentation.
 - [ ] Integrate Securibench as a submodule.
 - [ ] Fix bugs for Securibench in folders
