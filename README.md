@@ -118,7 +118,7 @@ and the tests cases are in `src/test/java/securibench`.
 We have created a file `taintbench.properties` in `src/test/resources` to set the configurations.
 
 > failed: 38, passed: 1, ignored: 0 of 39 test (2.56%)
-> 
+
 |                    APK                     | Expected | Actual | Status  |
 |:------------------------------------------:|:--------:|:------:|:-------:|
 |                 backflash                  |    13    |   20   | FAILED  |
