@@ -212,7 +212,7 @@ We have created a file `taintbench.properties` in `src/test/resources` to set th
 |          the_interview_movieshow           |    1     |   0    | FAILED |     0     |   0    |    0    |
 |             threatjapan_uracto             |    2     |   0    | FAILED |     0     |   0    |    0    |
 |           vibleaker_android_samp           |    4     |   0    | FAILED |     0     |   0    |    0    |
-|             xbot_android_samp              |    3     |   0    | FAILED |     -     |   -    |    -    |
+|             xbot_android_samp              |    3     |   0    | FAILED |     0     |   0    |    0    |
 |                   TOTAL                    |   203    |   0    |   -    |     -     |   -    |    -    |
 |                   TOTAL*                   |   186    |   0    |   -    |     -     |   -    |    -    |
 
