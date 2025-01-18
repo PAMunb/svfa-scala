@@ -44,6 +44,7 @@ class AndroidTaintBenchSuiteTest2 extends FunSuite with Metrics {
 
   test("in the APK chat_hook, we should detect 12 flow") {
     val expected = 12
+
     val svfa = new AndroidTaintBenchTest("chat_hook") with ChatHookSpec
     svfa.buildSparseValueFlowGraph()
 
@@ -54,9 +55,15 @@ class AndroidTaintBenchSuiteTest2 extends FunSuite with Metrics {
   }
 
   test("in the APK chulia, we should detect 4 flow") {
-    val svfa = new AndroidTaintBenchTest("chulia") with ChuliaSpec
+    val expected = 4
+
+    val svfa = new AndroidTaintBenchTest("chulia")
     svfa.buildSparseValueFlowGraph()
-    assert(svfa.reportConflictsSVG().size == 4)
+
+    val actual = svfa.reportConflictsSVG().size
+    this.compute(expected, actual)
+
+    assert(actual == expected)
   }
 
   test("in the APK death_ring_materialflow, we should detect 1 flow") {
