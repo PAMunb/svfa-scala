@@ -93,7 +93,7 @@ class AndroidTaintBenchSuiteTest2 extends FunSuite with Metrics {
   test("in the APK exprespam, we should detect 2 flow") {
     val expected = 2
 
-    val svfa = new AndroidTaintBenchTest("exprespam") with ExprespamSpec
+    val svfa = new AndroidTaintBenchTest("exprespam")
     svfa.buildSparseValueFlowGraph()
 
     val actual = svfa.reportConflictsSVG().size
