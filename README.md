@@ -175,10 +175,10 @@ We have created a file `taintbench.properties` in `src/test/resources` to set th
 |                    APK                     | Expected | Actual | Status | Precision | Recall | F-score |
 |:------------------------------------------:|:--------:|:------:|:------:|:---------:|:------:|:-------:| 
 |                 backflash                  |    13    |   1    | FAILED |     1     |  0.08  |  0.14   |
-|          beita_com_beita_contact           |    3     |   0    | FAILED |     -     |   -    |    -    |
+|          beita_com_beita_contact           |    3     |   0    | FAILED |     0     |   0    |    0    |
 |                cajino_baidu                |    12    |   8    | FAILED |     1     |  0.67  |  0.80   |
 |                 chat_hook                  |    12    |   6    | FAILED |     1     |  0.50  |  0.67   |
-|                   chulia                   |    4     |   0    | FAILED |     -     |   -    |    -    |
+|                   chulia                   |    4     |   0    | FAILED |     0     |   0    |    0    |
 |          death_ring_materialflow           |    1     |   0    | FAILED |     -     |   -    |    -    |
 |               dsencrypt_samp               |    1     |   0    | FAILED |     -     |   -    |    -    |
 |                 exprespam                  |    2     |   0    | FAILED |     -     |   -    |    -    |
