@@ -1,14 +1,19 @@
 package br.unb.cic.android
 
 import br.unb.cic.android.specs.{BackFlashSpec, BeitaComBeitaContactSpec, CajinoBaiduSpec, ChatHookSpec, ChuliaSpec, DeathRingMaterialflowSpec, DsencryptSampSpec, ExprespamSpec, FakeappstoreSpec, FakebankAndroidSampSpec, FakedaumSpec, FakemartSpec, FakeplaySpec, FaketaobaoSpec, GodwonSampSpec, HummingbadAndroidSampSpec, JollyservSpec, OverlayAndroidSampSpec, Overlaylocker2AndroidSampSpec, PhospySpec, ProxySampSpec, RemoteControlSmackSpec, RepaneSpec, RoidSecSpec, SamsapoSpec, SaveMeSpec, ScipiexSpec, SlockerAndroidSampSpec, SmsGoogleSpec, SmsSendLockerQqmagicSpec, SmssendPackageInstallerSpec, SmssilienceFakeVertuSpec, SmsstealerKysnAssassincreedAndroidSampSpec, StelsFlashplayerAndroidUpdateSpec, TetusSpec, TheInterviewMovieShowSpec, ThreatjapanUractoSpec, VibleakerAndroidSampSpec, XbotAndroidSampSpec}
+import br.unb.cic.soot.svfa.metrics.Metrics
 import org.scalatest.FunSuite
 
-class AndroidTaintBenchSuiteTest extends FunSuite {
+class AndroidTaintBenchSuiteTest extends FunSuite with Metrics {
 
   test("in the APK backflash, we should detect 13 flow") {
+    val expected = 13;
+
    val svfa = new AndroidTaintBenchTest("backflash") with BackFlashSpec
     svfa.buildSparseValueFlowGraph()
-    assert(svfa.reportConflictsSVG().size == 13)
+    val actual = svfa.reportConflictsSVG().size
+   this.compute(expected, actual)
+   assert(actual == expected)
   }
 
   test("in the APK beita_com_beita_contact, we should detect 3 flow") {
