@@ -114,6 +114,9 @@ and the tests cases are in `src/test/java/securibench`.
 
 ### Taintbench: (WIP) 
 
+*source*: https://taintbench.github.io/taintbenchSuite/
+
+#### CASE I
 [Taintbench](https://github.com/TaintBench/TaintBench/releases/download/TaintBenchSuite/TaintBench.zip) contains a set o Android Apks that are old malware apps.
 We have created a file `taintbench.properties` in `src/test/resources` to set the configurations.
 
@@ -163,7 +166,55 @@ We have created a file `taintbench.properties` in `src/test/resources` to set th
 |                   TOTAL                    |   203    |  451   |   -    |   0.45    |   1    |  0.62   |
 |                   TOTAL*                   |   186    |  451   |   -    |   0.41    |   1    |  0.58   |
 
-*source*: https://taintbench.github.io/taintbenchSuite/
+#### CASE II
+[Taintbench](https://github.com/TaintBench/TaintBench/releases/download/TaintBenchSuite/TaintBench.zip) contains a set o Android Apks that are old malware apps.
+We have created a file `taintbench.properties` in `src/test/resources` to set the configurations.
+
+> failed: 38, passed: 1, ignored: 0 of 39 test (2.56%)
+
+|                    APK                     | Expected | Actual | Status | Precision |  Recall  |  F-score  |
+|:------------------------------------------:|:--------:|:------:|:------:|:---------:|:--------:|:---------:| 
+|                 backflash                  |    13    |   1    | FAILED |     1     |   0.08   |   0.14    |
+|          beita_com_beita_contact           |    3     |   0    | FAILED |     0     |    0     |     0     |
+|                cajino_baidu                |    12    |   8    | FAILED |     1     |   0.67   |   0.80    |
+|                 chat_hook                  |    12    |   0    | FAILED |     0     |    0     |     0     |
+|                   chulia                   |    4     |   0    | FAILED |     0     |    0     |     0     |
+|          death_ring_materialflow           |    1     |   0    | FAILED |     0     |    0     |     0     |
+|               dsencrypt_samp               |    1     |   0    | FAILED |     0     |    0     |     0     |
+|                 exprespam                  |    2     |   0    | FAILED |     0     |    0     |     0     |
+|                fakeappstore                |    3     |   0    | FAILED |     0     |    0     |     0     |
+|           fakebank_android_samp            |    5     |   0    | FAILED |     0     |    0     |     0     |
+|                  fakedaum                  |    2     |   0    | FAILED |     0     |    0     |     0     |
+|                  fakemart                  |    2     |   0    | FAILED |     0     |    0     |     0     |
+|                  fakeplay                  |    2     |   0    | FAILED |     0     |    0     |     0     |
+|                 faketaobao                 |    4     |   0    | FAILED |     0     |    0     |     0     |
+|                godwon_samp                 |    6     |   0    | FAILED |     0     |    0     |     0     |
+|          hummingbad_android_samp           |    2     |   0    | FAILED |     0     |    0     |     0     |
+|                 jollyserv                  |    1     |   0    | FAILED |     0     |    0     |     0     |
+|            overlay_android_samp            |    4     |   0    | FAILED |     0     |    0     |     0     |
+|        overlaylocker2_android_samp         |    7     |   0    | FAILED |     0     |    0     |     0     |
+|                   phospy                   |    2     |   0    | FAILED |     0     |    0     |     0     |
+|                 proxy_samp                 |    17    |   0    | FAILED |     0     |    0     |     0     |
+|            remote_control_smack            |    17    |   0    | FAILED |     0     |    0     |     0     |
+|                   repane                   |    1     |   0    | FAILED |     0     |    0     |     0     |
+|                  Roidsec                   |    6     |   0    | FAILED |     0     |    0     |     0     |
+|                  samsapo                   |    4     |   0    | FAILED |     0     |    0     |     0     |
+|                  save_me                   |    25    |   0    | FAILED |     0     |    0     |     0     |
+|                  scipiex                   |    3     |   0    | FAILED |     0     |    0     |     0     |
+|            slocker_android_samp            |    5     |   0    | FAILED |     0     |    0     |     0     |
+|                 sms_google                 |    4     |   0    | FAILED |     0     |    0     |     0     |
+|          sms_send_locker_qqmagic           |    6     |   0    | FAILED |     0     |    0     |     0     |
+|          smssend_packageInstaller          |    5     |   0    | FAILED |     0     |    0     |     0     |
+|           smssilience_fake_vertu           |    2     |   0    | FAILED |     0     |    0     |     0     |
+| smsstealer_kysn_assassincreed_android_samp |    5     |   0    | FAILED |     0     |    0     |     0     |
+|      stels_flashplayer_android_update      |    3     |   0    | FAILED |     0     |    0     |     0     |
+|                   tetus                    |    2     |   0    | FAILED |     0     |    0     |     0     |
+|          the_interview_movieshow           |    1     |   0    | FAILED |     0     |    0     |     0     |
+|             threatjapan_uracto             |    2     |   0    | FAILED |     0     |    0     |     0     |
+|           vibleaker_android_samp           |    4     |   0    | FAILED |     0     |    0     |     0     |
+|             xbot_android_samp              |    3     |   0    | FAILED |     0     |    0     |     0     |
+|                   TOTAL                    |   203    |   0    |   -    |     0     |    0     |     0     |
+|                   TOTAL*                   |   186    |   0    |   -    |     0     |    0     |     0     |
 
 ## Tasks
 ### WIP
