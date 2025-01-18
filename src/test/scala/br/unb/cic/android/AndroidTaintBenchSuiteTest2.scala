@@ -45,7 +45,7 @@ class AndroidTaintBenchSuiteTest2 extends FunSuite with Metrics {
   test("in the APK chat_hook, we should detect 12 flow") {
     val expected = 12
 
-    val svfa = new AndroidTaintBenchTest("chat_hook") with ChatHookSpec
+    val svfa = new AndroidTaintBenchTest("chat_hook")
     svfa.buildSparseValueFlowGraph()
 
     val actual = svfa.reportConflictsSVG().size
