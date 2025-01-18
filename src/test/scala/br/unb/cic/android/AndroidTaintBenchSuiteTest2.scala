@@ -67,9 +67,14 @@ class AndroidTaintBenchSuiteTest2 extends FunSuite with Metrics {
   }
 
   test("in the APK death_ring_materialflow, we should detect 1 flow") {
-    val svfa = new AndroidTaintBenchTest("death_ring_materialflow") with DeathRingMaterialflowSpec
+    val expected = 1
+    val svfa = new AndroidTaintBenchTest("death_ring_materialflow")
     svfa.buildSparseValueFlowGraph()
-    assert(svfa.reportConflictsSVG().size == 1)
+
+    val actual = svfa.reportConflictsSVG().size
+    this.compute(expected, actual)
+
+    assert(actual == expected)
   }
 
   test("in the APK dsencrypt_samp, we should detect 1 flow") {
