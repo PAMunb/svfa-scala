@@ -295,9 +295,15 @@ class AndroidTaintBenchSuiteTest2 extends FunSuite with Metrics {
   }
 
   test("in the APK samsapo, we should detect 4 flows") {
-    val svfa = new AndroidTaintBenchTest("samsapo") with SamsapoSpec
+    val expected = 4
+
+    val svfa = new AndroidTaintBenchTest("samsapo")
     svfa.buildSparseValueFlowGraph()
-    assert(svfa.reportConflictsSVG().size == 4)
+
+    val actual = svfa.reportConflictsSVG().size
+    this.compute(expected, actual)
+
+    assert(actual == expected)
   }
 
   test("in the APK save_me we should detect 25 flows") {
