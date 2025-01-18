@@ -213,8 +213,8 @@ We have created a file `taintbench.properties` in `src/test/resources` to set th
 |             threatjapan_uracto             |    2     |   0    | FAILED |     0     |   0    |    0    |
 |           vibleaker_android_samp           |    4     |   0    | FAILED |     0     |   0    |    0    |
 |             xbot_android_samp              |    3     |   0    | FAILED |     0     |   0    |    0    |
-|                   TOTAL                    |   203    |   0    |   -    |     -     |   -    |    -    |
-|                   TOTAL*                   |   186    |   0    |   -    |     -     |   -    |    -    |
+|                   TOTAL                    |   203    |   50   |   -    |   1.00    |  0.25  |  0.40   |
+|                   TOTAL*                   |   186    |   50   |   -    |   1.00    |  0.27  |  0.42   |
 
 ## Tasks
 ### WIP
