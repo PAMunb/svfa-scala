@@ -223,9 +223,15 @@ class AndroidTaintBenchSuiteTest2 extends FunSuite with Metrics {
   }
 
   test("in the APK overlaylocker2_android_samp, we should detect 7 flows") {
-    val svfa = new AndroidTaintBenchTest("overlaylocker2_android_samp") with Overlaylocker2AndroidSampSpec
+    val expected = 7
+
+    val svfa = new AndroidTaintBenchTest("overlaylocker2_android_samp")
     svfa.buildSparseValueFlowGraph()
-    assert(svfa.reportConflictsSVG().size == 7)
+
+    val actual = svfa.reportConflictsSVG().size
+    this.compute(expected, actual)
+
+    assert(actual == expected)
   }
 
   test("in the APK phospy, we should detect 2 flows") {
