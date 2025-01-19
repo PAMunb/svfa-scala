@@ -276,7 +276,7 @@ We can see the details from each test using JSVFA in the next table.
 |           smssilience_fake_vertu           |    2     |   2    | PASSED | 2  | 0  |   1.00    |  1.00  |  1.00   | 
 | smsstealer_kysn_assassincreed_android_samp |    5     |   1    | FAILED | 1  | 0  |   1.00    |  0.20  |  0.33   | 
 |      stels_flashplayer_android_update      |    3     |   19   | FAILED | 3  | 16 |   0.16    |  1.00  |  0.27   | 
-|                   tetus                    |    2     |   9    | FAILED | -  | -  |     -     |   -    |    -    | 
+|                   tetus                    |    2     |   11   | FAILED | 2  | 9  |   0.18    |  1.00  |  0.31   | 
 |          the_interview_movieshow           |    1     |   0    | FAILED | -  | -  |     -     |   -    |    -    | 
 |             threatjapan_uracto             |    2     |   0    | FAILED | -  | -  |     -     |   -    |    -    | 
 |           vibleaker_android_samp           |    4     |   5    | FAILED | -  | -  |     -     |   -    |    -    | 
