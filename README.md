@@ -211,7 +211,7 @@ We can see the details from each test using JSVFA in the next table.
 ##### Observation
 - From the 37 failing tests, 28 of them reported zero flows.
 
-#### CASE II
+#### CASE STUDY II
 
 This case emulates **Experiment 3 - TB3** that configures:
 

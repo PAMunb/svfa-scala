@@ -4,7 +4,12 @@ import br.unb.cic.android.specs.{BackFlashSpec, BeitaComBeitaContactSpec, Cajino
 import br.unb.cic.metrics.Metrics
 import org.scalatest.FunSuite
 
-class AndroidTaintBenchSuiteTest extends FunSuite with Metrics {
+/**
+ * CASE STUDY 2:
+ * Each test is run with its associated list of sources and sinks
+ * We do it injecting the "trait" that contents these list at the instance of the object
+ */
+class AndroidTaintBenchSuiteCaseStudy2Test extends FunSuite with Metrics {
 
   test("in the APK backflash, we should detect 13 flow") {
     val expected = 13;
