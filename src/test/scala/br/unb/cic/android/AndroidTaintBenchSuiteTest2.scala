@@ -475,10 +475,20 @@ class AndroidTaintBenchSuiteTest2 extends FunSuite with Metrics {
   }
 
   test("metrics") {
-    val expected = 186
-    val actual = 50
+    val expected = 203
+    val actual = 41
 
     this.compute(expected, actual)
+
+    assert(true)
+  }
+
+  test("metrics2") {
+    val P = 186
+    val TP = 41
+    val FP = 14
+
+    this.compute2(P, TP, FP)
 
     assert(true)
   }
