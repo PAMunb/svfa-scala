@@ -1,7 +1,7 @@
 package br.unb.cic.android
 
 import br.unb.cic.android.specs.{BackFlashSpec, BeitaComBeitaContactSpec, CajinoBaiduSpec, ChatHookSpec, ChuliaSpec, DeathRingMaterialflowSpec, DsencryptSampSpec, ExprespamSpec, FakeappstoreSpec, FakebankAndroidSampSpec, FakedaumSpec, FakemartSpec, FakeplaySpec, FaketaobaoSpec, GodwonSampSpec, HummingbadAndroidSampSpec, JollyservSpec, OverlayAndroidSampSpec, Overlaylocker2AndroidSampSpec, PhospySpec, ProxySampSpec, RemoteControlSmackSpec, RepaneSpec, RoidSecSpec, SamsapoSpec, SaveMeSpec, ScipiexSpec, SlockerAndroidSampSpec, SmsGoogleSpec, SmsSendLockerQqmagicSpec, SmssendPackageInstallerSpec, SmssilienceFakeVertuSpec, SmsstealerKysnAssassincreedAndroidSampSpec, StelsFlashplayerAndroidUpdateSpec, TetusSpec, TheInterviewMovieShowSpec, ThreatjapanUractoSpec, VibleakerAndroidSampSpec, XbotAndroidSampSpec}
-import br.unb.cic.soot.svfa.metrics.Metrics
+import br.unb.cic.metrics.Metrics
 import org.scalatest.FunSuite
 
 class AndroidTaintBenchSuiteTest extends FunSuite with Metrics {

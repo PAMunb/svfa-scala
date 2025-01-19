@@ -1,7 +1,7 @@
 package br.unb.cic.android
 
 import br.unb.cic.android.specs._
-import br.unb.cic.soot.svfa.metrics.Metrics
+import br.unb.cic.metrics.Metrics
 import org.scalatest.FunSuite
 
 class AndroidTaintBenchSuiteTest2 extends FunSuite with Metrics {

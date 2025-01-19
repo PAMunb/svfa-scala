@@ -1,4 +1,4 @@
-package br.unb.cic.soot.svfa.metrics
+package br.unb.cic.metrics
 
 trait Metrics {
 
