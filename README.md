@@ -235,9 +235,9 @@ and a slightly better `F-score(0.35)`.~~
 
 - FLOWDROID metrics from Paper https://doi.org/10.1007/s10664-021-10013-5
 
-| Expected | Actual | TP | FP | Precision | Recall | F-score  |
-|:--------:|:------:|:--:|:--:|:---------:|:------:|:--------:|
-|   186    |   -    | -  | -  |     -     |   -    |    -    |
+| Expected | Actual | TP | FP | Precision | Recall | F-score |
+|:--------:|:------:|:--:|:--:|:---------:|:------:|:-------:|
+|   186    |   57   | 43 | 14 |   0.75    |  0.23  |  0.35   |
 
 We can see the details from each test using JSVFA in the next table.
 
