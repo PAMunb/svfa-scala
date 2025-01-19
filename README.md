@@ -136,7 +136,7 @@ After that, we will compare the already computed results for FLOWDROID to our re
 **Disclaimer**: Although TAINTBENCH contains 203 expected [taint flows](https://taintbench.github.io/taintbenchSuite/),
 we have decided to use only 186 expected cases because the mentioned paper, uses as a reference, works with those amounts.
 
-#### CASE I
+#### CASE STUDY I
 
 This case emulates **Experiment 2 - TB2** that states:
 
