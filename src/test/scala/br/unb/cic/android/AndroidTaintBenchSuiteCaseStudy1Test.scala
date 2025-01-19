@@ -4,7 +4,7 @@ import br.unb.cic.metrics.Metrics
 import org.scalatest.FunSuite
 
 /**
- * CASE STUDY 1:
+ * EXPERIMENT 1:
  * All tests are configured with sources and sinks defined in benchmark suite.
  * We do it using a unique "trait" that contents these lists.
  */

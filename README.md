@@ -136,7 +136,7 @@ After that, we will compare the already computed results for FLOWDROID to our re
 **Disclaimer**: Although TAINTBENCH contains 203 expected [taint flows](https://taintbench.github.io/taintbenchSuite/),
 we have decided to use only 186 expected cases because the mentioned paper, uses as a reference, works with those amounts.
 
-#### CASE STUDY I
+#### EXPERIMENT I
 
 This case emulates **Experiment 2 - TB2** that states:
 
@@ -211,7 +211,7 @@ We can see the details from each test using JSVFA in the next table.
 ##### Observation
 - From the 37 failing tests, 28 of them reported zero flows.
 
-#### CASE STUDY II
+#### EXPERIMENT II
 
 This case emulates **Experiment 3 - TB3** that configures:
 

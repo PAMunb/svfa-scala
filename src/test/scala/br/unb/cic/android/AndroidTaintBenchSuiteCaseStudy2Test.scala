@@ -5,7 +5,7 @@ import br.unb.cic.metrics.Metrics
 import org.scalatest.FunSuite
 
 /**
- * CASE STUDY 2:
+ * EXPERIMENT 2:
  * Each test is run with its associated list of sources and sinks
  * We do it injecting the "trait" that contents these list at the instance of the object
  */
