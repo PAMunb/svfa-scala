@@ -489,8 +489,8 @@ class AndroidTaintBenchSuiteCaseStudy1Test extends FunSuite with Metrics {
 
   test("computeMetricsByCriterions") {
     val P = 186
-    val TP = 41
-    val FP = 14
+    val TP = 135
+    val FP = 318
 
     this.computeMetricsByCriterions(P, TP, FP)
 
