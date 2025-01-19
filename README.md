@@ -260,7 +260,7 @@ We can see the details from each test using JSVFA in the next table.
 |          hummingbad_android_samp           |    2     |   23   | FAILED | 2  | 21 |   0.09    |  1.00  |  0.16   | 
 |                 jollyserv                  |    1     |   7    | FAILED | 1  | 6  |   0.14    |  1.00  |  0.25   | 
 |            overlay_android_samp            |    4     |   8    | FAILED | 4  | 4  |   0.50    |  1.00  |  0.67   | 
-|        overlaylocker2_android_samp         |    7     |   34   | FAILED | -  | -  |     -     |   -    |    -    | 
+|        overlaylocker2_android_samp         |    7     |   35   | FAILED | 7  | 28 |   0.20    |  1.00  |  0.33   | 
 |                   phospy                   |    2     |   1    | FAILED | -  | -  |     -     |   -    |    -    | 
 |                 proxy_samp                 |    17    |   20   | FAILED | -  | -  |     -     |   -    |    -    | 
 |            remote_control_smack            |    17    |   5    | FAILED | -  | -  |     -     |   -    |    -    | 
