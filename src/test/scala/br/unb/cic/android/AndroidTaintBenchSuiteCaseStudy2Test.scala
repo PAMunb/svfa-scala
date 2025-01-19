@@ -232,9 +232,14 @@ class AndroidTaintBenchSuiteCaseStudy2Test extends FunSuite with Metrics {
   }
 
   test("in the APK proxy_samp, we should detect 17 flows") {
+    val expected = 17
+
     val svfa = new AndroidTaintBenchTest("proxy_samp") with ProxySampSpec
     svfa.buildSparseValueFlowGraph()
-    assert(svfa.reportConflictsSVG().size == 17)
+
+    val actual = svfa.reportConflictsSVG().size
+    this.computeMetricsByResults(expected, actual)
+    assert(actual == expected)
   }
 
   test("in the APK remote_control_smack, we should detect 17 flows") {
