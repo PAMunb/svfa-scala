@@ -18,10 +18,10 @@ trait Metrics {
         }
 
         // Compute Metrics
-        compute2(P,TP, FP)
+        computeMetricsByCriterions(P,TP, FP)
     }
 
-    def compute2(P: Double, TP: Double, FP: Double): Unit = {
+    def computeMetricsByCriterions(P: Double, TP: Double, FP: Double): Unit = {
         val precision = TP / (TP + FP)
         val recall = TP / P
         val fscore = (2 * precision * recall) / (precision + recall)

@@ -1,6 +1,5 @@
 package br.unb.cic.android
 
-import br.unb.cic.android.specs._
 import br.unb.cic.metrics.Metrics
 import org.scalatest.FunSuite
 
@@ -483,12 +482,12 @@ class AndroidTaintBenchSuiteTest2 extends FunSuite with Metrics {
     assert(true)
   }
 
-  test("metrics2") {
+  test("computeMetricsByCriterions") {
     val P = 186
     val TP = 41
     val FP = 14
 
-    this.compute2(P, TP, FP)
+    this.computeMetricsByCriterions(P, TP, FP)
 
     assert(true)
   }
