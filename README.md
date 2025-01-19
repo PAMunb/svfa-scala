@@ -281,8 +281,8 @@ We can see the details from each test using JSVFA in the next table.
 |             threatjapan_uracto             |    2     |   0    | FAILED | 0  | 0  |     0     |   0    |    0    |
 |           vibleaker_android_samp           |    4     |   5    | FAILED | 4  | 1  |   0.80    |  1.00  |  0.89   | 
 |             xbot_android_samp              |    3     |   8    | FAILED | 3  | 5  |   0.38    |  1.00  |  0.55   | 
-|                   TOTAL                    |   203    |  451   |   -    | -  | -  |     -     |   -    |    -    |
-|                   TOTAL*                   |   186    |  451   |   -    | -  | -  |     -     |   -    |    -    |
+|                   TOTAL                    |   203    |  453   |   -    | -  | -  |     -     |   -    |    -    |
+|                   TOTAL*                   |   186    |  453   |   -    | -  | -  |     -     |   -    |    -    |
 
 ##### Observation
 - 
