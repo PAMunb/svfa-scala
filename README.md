@@ -256,7 +256,7 @@ We can see the details from each test using JSVFA in the next table.
 |                  fakemart                  |    2     |   0    | FAILED | 0  | 0  |     0     |   0    |    0    | 
 |                  fakeplay                  |    2     |   15   | FAILED | 2  | 13 |   0.13    |  1.00  |  0.24   | 
 |                 faketaobao                 |    4     |   0    | FAILED | 0  | 0  |     0     |   0    |    0    | 
-|                godwon_samp                 |    6     |   0    | FAILED | -  | -  |     -     |   -    |    -    | 
+|                godwon_samp                 |    6     |   0    | FAILED | 0  | 0  |     0     |   0    |    0    | 
 |          hummingbad_android_samp           |    2     |   23   | FAILED | -  | -  |     -     |   -    |    -    | 
 |                 jollyserv                  |    1     |   7    | FAILED | -  | -  |     -     |   -    |    -    | 
 |            overlay_android_samp            |    4     |   8    | FAILED | -  | -  |     -     |   -    |    -    | 
