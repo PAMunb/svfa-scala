@@ -263,7 +263,7 @@ We can see the details from each test using JSVFA in the next table.
 |        overlaylocker2_android_samp         |    7     |   35   | FAILED | 7  | 28 |   0.20    |  1.00  |  0.33   | 
 |                   phospy                   |    2     |   1    | FAILED | 1  | 0  |   1.00    |  0.50  |  0.67   | 
 |                 proxy_samp                 |    17    |   21   | FAILED | 17 | 4  |   0.81    |  1.00  |  0.89   | 
-|            remote_control_smack            |    17    |   5    | FAILED | -  | -  |     -     |   -    |    -    | 
+|            remote_control_smack            |    17    |   6    | FAILED | 6  | 0  |   1.00    |  0.35  |  0.52   | 
 |                   repane                   |    1     |   0    | FAILED | -  | -  |     -     |   -    |    -    | 
 |                  Roidsec                   |    6     |   1    | FAILED | -  | -  |     -     |   -    |    -    | 
 |                  samsapo                   |    4     |   0    | FAILED | -  | -  |     -     |   -    |    -    | 
