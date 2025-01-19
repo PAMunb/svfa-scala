@@ -242,7 +242,7 @@ We can see the details from each test using JSVFA in the next table.
 
 |                    APK                     | Expected | Actual | Status | TP | FP | Precision | Recall | F-score |
 |:------------------------------------------:|:--------:|:------:|:------:|:--:|:--:|:---------:|:------:|:-------:| 
-|                 backflash                  |    13    |   20   | FAILED | 13 | -  |   0.65    |  1.00  |  0.79   |
+|                 backflash                  |    13    |   20   | FAILED | 13 | 7  |   0.65    |  1.00  |  0.79   |
 |          beita_com_beita_contact           |    3     |   14   | FAILED | 3  | 11 |   0.21    |  1.00  |  0.35   | 
 |                cajino_baidu                |    12    |   95   | FAILED | -  | -  |     -     |   -    |    -    | 
 |                 chat_hook                  |    12    |   18   | FAILED | -  | -  |     -     |   -    |    -    | 
