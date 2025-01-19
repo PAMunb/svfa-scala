@@ -251,7 +251,7 @@ We can see the details from each test using JSVFA in the next table.
 |               dsencrypt_samp               |    1     |   2    | FAILED | 1  | 1  |   0.50    |  1.00  |  0.67   | 
 |                 exprespam                  |    2     |   0    | FAILED | 0  | 0  |     0     |   0    |    0    | 
 |                fakeappstore                |    3     |   0    | FAILED | 0  | 0  |     0     |   0    |    0    | 
-|           fakebank_android_samp            |    5     |   6    | FAILED | -  | -  |     -     |   -    |    -    | 
+|           fakebank_android_samp            |    5     |   6    | FAILED | 5  | 1  |   0.83    |  1.00  |  0.91   | 
 |                  fakedaum                  |    2     |   10   | FAILED | -  | -  |     -     |   -    |    -    | 
 |                  fakemart                  |    2     |   0    | FAILED | -  | -  |     -     |   -    |    -    | 
 |                  fakeplay                  |    2     |   15   | FAILED | -  | -  |     -     |   -    |    -    | 
