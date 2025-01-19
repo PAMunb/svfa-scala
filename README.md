@@ -245,7 +245,7 @@ We can see the details from each test using JSVFA in the next table.
 |                 backflash                  |    13    |   20   | FAILED | 13 | 7  |   0.65    |  1.00  |  0.79   |
 |          beita_com_beita_contact           |    3     |   14   | FAILED | 3  | 11 |   0.21    |  1.00  |  0.35   | 
 |                cajino_baidu                |    12    |   95   | FAILED | 12 | 83 |   0.13    |  1.00  |  0.22   | 
-|                 chat_hook                  |    12    |   18   | FAILED | -  | -  |     -     |   -    |    -    | 
+|                 chat_hook                  |    12    |   15   | FAILED | 12 | 3  |   0.80    |  1.00  |  0.89   | 
 |                   chulia                   |    4     |   0    | FAILED | -  | -  |     -     |   -    |    -    | 
 |          death_ring_materialflow           |    1     |   45   | FAILED | -  | -  |     -     |   -    |    -    | 
 |               dsencrypt_samp               |    1     |   2    | FAILED | -  | -  |     -     |   -    |    -    | 
