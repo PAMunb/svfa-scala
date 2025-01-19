@@ -252,7 +252,7 @@ We can see the details from each test using JSVFA in the next table.
 |                 exprespam                  |    2     |   0    | FAILED | 0  | 0  |     0     |   0    |    0    | 
 |                fakeappstore                |    3     |   0    | FAILED | 0  | 0  |     0     |   0    |    0    | 
 |           fakebank_android_samp            |    5     |   6    | FAILED | 5  | 1  |   0.83    |  1.00  |  0.91   | 
-|                  fakedaum                  |    2     |   10   | FAILED | -  | -  |     -     |   -    |    -    | 
+|                  fakedaum                  |    2     |   10   | FAILED | 2  | 8  |   0.20    |  1.00  |  0.33   | 
 |                  fakemart                  |    2     |   0    | FAILED | -  | -  |     -     |   -    |    -    | 
 |                  fakeplay                  |    2     |   15   | FAILED | -  | -  |     -     |   -    |    -    | 
 |                 faketaobao                 |    4     |   0    | FAILED | -  | -  |     -     |   -    |    -    | 
