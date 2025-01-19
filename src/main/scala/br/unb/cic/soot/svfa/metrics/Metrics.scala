@@ -7,10 +7,6 @@ trait Metrics {
         var FP = 0.0
         var P = 0.0
 
-        var precision = 0.0
-        var recall = 0.0
-        var fscore = 0.0
-
         // Compute expected and unexpected flows
         P = expected
         if (actual > expected) {
@@ -22,13 +18,20 @@ trait Metrics {
         }
 
         // Compute Metrics
-        precision = TP / (TP + FP)
-        recall = TP / P
-        fscore = (2 * precision * recall) / (precision + recall)
+        compute2(P,TP, FP)
+    }
+
+    def compute2(P: Double, TP: Double, FP: Double): Unit = {
+        val precision = TP / (TP + FP)
+        val recall = TP / P
+        val fscore = (2 * precision * recall) / (precision + recall)
+
+        println(s"P: $P")
+        println(s"TP: $TP")
+        println(s"FP: $FP")
 
         println(f"precision: $precision%1.2f")
         println(f"recall: $recall%1.2f")
         println(f"fscore $fscore%1.2f")
-
     }
 }
