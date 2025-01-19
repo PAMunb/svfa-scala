@@ -228,9 +228,10 @@ and a slightly better `F-score(0.35)`.~~
 
 - JSVFA metrics
 
-| Expected | Actual | TP | FP | Precision | Recall | F-score |
-|:--------:|:------:|:--:|:--:|:---------:|:------:|:-------:|
-|   186    |   -    | -  | -  |     -     |   -    |    -    |
+| Expected | Actual | TP  | FP  | Precision | Recall | F-score |
+|:--------:|:------:|:---:|:---:|:---------:|:------:|:-------:|
+|   186    |  453   | 135 | 318 |   0.30    |  0.73  |  0.42   |
+
 
 - FLOWDROID metrics from Paper https://doi.org/10.1007/s10664-021-10013-5
 
