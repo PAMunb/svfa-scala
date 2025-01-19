@@ -267,7 +267,7 @@ We can see the details from each test using JSVFA in the next table.
 |                   repane                   |    1     |   0    | FAILED | 0  | 0  |     0     |   0    |    0    | 
 |                  Roidsec                   |    6     |   1    | FAILED | 1  | 0  |   1.00    |  0.17  |  0.29   | 
 |                  samsapo                   |    4     |   0    | FAILED | 0  | 0  |     0     |   0    |    0    | 
-|                  save_me                   |    25    |   15   | FAILED | -  | -  |     -     |   -    |    -    | 
+|                  save_me                   |    25    |   15   | FAILED | 15 | 0  |   1.00    |  0.60  |  0.75   | 
 |                  scipiex                   |    3     |   0    | FAILED | -  | -  |     -     |   -    |    -    | 
 |            slocker_android_samp            |    5     |   0    | FAILED | -  | -  |     -     |   -    |    -    | 
 |                 sms_google                 |    4     |   13   | FAILED | -  | -  |     -     |   -    |    -    | 
