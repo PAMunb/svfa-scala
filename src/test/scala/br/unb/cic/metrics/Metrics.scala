@@ -2,7 +2,7 @@ package br.unb.cic.metrics
 
 trait Metrics {
 
-    def compute(expected: Int, actual: Int): Unit = {
+    def computeMetricsByResults(expected: Int, actual: Int): Unit = {
         var TP = 0.0
         var FP = 0.0
         var P = 0.0

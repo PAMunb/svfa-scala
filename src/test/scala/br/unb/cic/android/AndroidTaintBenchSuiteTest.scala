@@ -12,7 +12,7 @@ class AndroidTaintBenchSuiteTest extends FunSuite with Metrics {
    val svfa = new AndroidTaintBenchTest("backflash") with BackFlashSpec
     svfa.buildSparseValueFlowGraph()
     val actual = svfa.reportConflictsSVG().size
-   this.compute(expected, actual)
+   this.computeMetricsByResults(expected, actual)
    assert(actual == expected)
   }
 
