@@ -269,7 +269,7 @@ We can see the details from each test using JSVFA in the next table.
 |                  samsapo                   |    4     |   0    | FAILED | 0  | 0  |     0     |   0    |    0    | 
 |                  save_me                   |    25    |   15   | FAILED | 15 | 0  |   1.00    |  0.60  |  0.75   | 
 |                  scipiex                   |    3     |   0    | FAILED | 0  | 0  |     0     |   0    |    0    | 
-|            slocker_android_samp            |    5     |   0    | FAILED | -  | -  |     -     |   -    |    -    | 
+|            slocker_android_samp            |    5     |   0    | FAILED | 0  | 0  |     0     |   0    |    0    | 
 |                 sms_google                 |    4     |   13   | FAILED | -  | -  |     -     |   -    |    -    | 
 |          sms_send_locker_qqmagic           |    6     |   9    | FAILED | -  | -  |     -     |   -    |    -    | 
 |          smssend_packageInstaller          |    5     |   46   | FAILED | -  | -  |     -     |   -    |    -    | 
