@@ -271,7 +271,7 @@ We can see the details from each test using JSVFA in the next table.
 |                  scipiex                   |    3     |   0    | FAILED | 0  | 0  |     0     |   0    |    0    | 
 |            slocker_android_samp            |    5     |   0    | FAILED | 0  | 0  |     0     |   0    |    0    | 
 |                 sms_google                 |    4     |   13   | FAILED | 4  | 9  |   0.31    |  1.00  |  0.47   | 
-|          sms_send_locker_qqmagic           |    6     |   9    | FAILED | -  | -  |     -     |   -    |    -    | 
+|          sms_send_locker_qqmagic           |    6     |   9    | FAILED | 6  | 3  |   0.67    |  1.00  |  0.80   | 
 |          smssend_packageInstaller          |    5     |   46   | FAILED | -  | -  |     -     |   -    |    -    | 
 |           smssilience_fake_vertu           |    2     |   2    | PASSED | -  | -  |     -     |   -    |    -    | 
 | smsstealer_kysn_assassincreed_android_samp |    5     |   1    | FAILED | -  | -  |     -     |   -    |    -    | 
