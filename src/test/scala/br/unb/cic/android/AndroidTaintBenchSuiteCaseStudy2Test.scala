@@ -16,16 +16,21 @@ class AndroidTaintBenchSuiteCaseStudy2Test extends FunSuite with Metrics {
 
     val svfa = new AndroidTaintBenchTest("backflash") with BackFlashSpec
     svfa.buildSparseValueFlowGraph()
-    
+
     val actual = svfa.reportConflictsSVG().size
     this.computeMetricsByResults(expected, actual)
     assert(actual == expected)
   }
 
   test("in the APK beita_com_beita_contact, we should detect 3 flow") {
+    val expected = 3
+
     val svfa = new AndroidTaintBenchTest("beita_com_beita_contact") with BeitaComBeitaContactSpec
     svfa.buildSparseValueFlowGraph()
-    assert(svfa.reportConflictsSVG().size == 3)
+
+    val actual = svfa.reportConflictsSVG().size
+    this.computeMetricsByResults(expected, actual)
+    assert(actual == expected)
   }
 
   test("in the APK cajino_baidu, we should detect 12 flow") {
