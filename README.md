@@ -250,7 +250,7 @@ We can see the details from each test using JSVFA in the next table.
 |          death_ring_materialflow           |    1     |   45   | FAILED | 1  | 44 |   0.02    |  1.00  |  0.04   | 
 |               dsencrypt_samp               |    1     |   2    | FAILED | 1  | 1  |   0.50    |  1.00  |  0.67   | 
 |                 exprespam                  |    2     |   0    | FAILED | 0  | 0  |     0     |   0    |    0    | 
-|                fakeappstore                |    3     |   0    | FAILED | -  | -  |     -     |   -    |    -    | 
+|                fakeappstore                |    3     |   0    | FAILED | 0  | 0  |     0     |   0    |    0    | 
 |           fakebank_android_samp            |    5     |   6    | FAILED | -  | -  |     -     |   -    |    -    | 
 |                  fakedaum                  |    2     |   10   | FAILED | -  | -  |     -     |   -    |    -    | 
 |                  fakemart                  |    2     |   0    | FAILED | -  | -  |     -     |   -    |    -    | 
