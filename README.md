@@ -112,21 +112,29 @@ and the tests cases are in `src/test/java/securibench`.
   - [3]
   - [5]
 
-### Taintbench: (WIP)
+### TAINTBENCH: (WIP)
 
-Paper https://doi.org/10.1007/s10664-021-10013-5 introduces TAINTBENCH and in its result section presents six experiments
-to answer one of its RQ: *How effective are taint analysis tools on TaintBench compared to DroidBench*, where FLOWDROID and AMANDROID as the chosen tools.
+[TAINTBENCH](https://taintbench.github.io/) is a benchmark that contains a [set of old malware Android Apks](https://github.com/TaintBench/TaintBench/releases/download/TaintBenchSuite/TaintBench.zip) , 
+and it is introduced by [Paper: TaintBench: Automatic real-world malware benchmarking of Android taint analyses](https://doi.org/10.1007/s10664-021-10013-5), 
+which in its result section presents six experiments to answer one of its RQ: *How effective are taint analysis tools on TaintBench compared to DroidBench*,
+where FLOWDROID and AMANDROID as the chosen tools.
 
-We will focus in **Experiment 2** and **Experiment #3** and use our tool (JSVFA) to reproduce them. 
+In the next sections, we will focus in **Experiment 2** and **Experiment 3** and use our tool (JSVFA) to reproduce them. 
 After that, we will compare the already computed results for FLOWDROID to our results.
- 
 
-[//]: # (In the next sections, )
-~~[Taintbench](https://github.com/TaintBench/TaintBench/releases/download/TaintBenchSuite/TaintBench.zip) contains a set o Android Apks that are old malware apps.
-We have created a file `taintbench.properties` in `src/test/resources` to set the configurations.~~
+- The result for each APK tested using JSVFA are presented in a table that contains the following information.
+  - **Expected:** The amount of taint flows presented by TAINTBENCH
+  - **Actual:** The amount of taint flows detected by JSVFA
+  - **Status:** If the test PASS OR FAIL
+  - **TP:** True Positive
+  - **FP:** False Positive
+  - **Precision:** TP/(TP + FP)
+  - **Recall:** TP/P
+  - **F-score:** (2 x Precision x Recall)/(Precision + Recall)
+- We have created a file `taintbench.properties` in `src/test/resources` to set the configurations
 
-Disclaimer: Although TAINTBENCH contains 203 expected taint flows https://taintbench.github.io/taintbenchSuite/,
-We have decided to use only 186 expected cases because the mentioned paper, uses as a reference, works with those amounts.
+**Disclaimer**: Although TAINTBENCH contains 203 expected [taint flows](https://taintbench.github.io/taintbenchSuite/),
+we have decided to use only 186 expected cases because the mentioned paper, uses as a reference, works with those amounts.
 
 #### CASE I
 
@@ -134,7 +142,7 @@ This case emulates **Experiment 2 - TB2** that states:
 
 >All tools are configured with sources and sinks defined in benchmark suite.
 
-The mentioned sources and sinks can be found in https://github.com/TaintBench/TaintBench/blob/master/TB_SourcesAndSinks.txt, 
+The mentioned sources and sinks can be found in [TB_SourcesAndSinks](https://github.com/TaintBench/TaintBench/blob/master/TB_SourcesAndSinks.txt), 
 and we have stored them in `src/test/scala/br/unb/cic/android/TaintBenchSpec.scala`.
 
 As a result, we got `37 failed and 2 passed of 39 tests` and comparing to FLOWDROID we detected the same amount of `TP(41)`
@@ -147,7 +155,7 @@ and a slightly better `F-score(0.35)`.
 |:--------:|:------:|:--:|:--:|:---------:|:------:|:--------:|
 |   186    |   50   | 41 | 9  |   0.82    |  0.22  |   0.35   |
 
-- FLOWDROID metrics from Paper https://doi.org/10.1007/s10664-021-10013-5
+- FLOWDROID metrics from [Paper](https://doi.org/10.1007/s10664-021-10013-5)
 
 | Expected | Actual | TP | FP | Precision | Recall | F-score  |
 |:--------:|:------:|:--:|:--:|:---------:|:------:|:--------:|
