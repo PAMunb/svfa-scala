@@ -247,7 +247,7 @@ We can see the details from each test using JSVFA in the next table.
 |                cajino_baidu                |    12    |   95   | FAILED | 12 | 83 |   0.13    |  1.00  |  0.22   | 
 |                 chat_hook                  |    12    |   15   | FAILED | 12 | 3  |   0.80    |  1.00  |  0.89   | 
 |                   chulia                   |    4     |   0    | FAILED | 0  | 0  |     0     |   0    |    0    | 
-|          death_ring_materialflow           |    1     |   45   | FAILED | -  | -  |     -     |   -    |    -    | 
+|          death_ring_materialflow           |    1     |   45   | FAILED | 1  | 44 |   0.02    |  1.00  |  0.04   | 
 |               dsencrypt_samp               |    1     |   2    | FAILED | -  | -  |     -     |   -    |    -    | 
 |                 exprespam                  |    2     |   0    | FAILED | -  | -  |     -     |   -    |    -    | 
 |                fakeappstore                |    3     |   0    | FAILED | -  | -  |     -     |   -    |    -    | 
