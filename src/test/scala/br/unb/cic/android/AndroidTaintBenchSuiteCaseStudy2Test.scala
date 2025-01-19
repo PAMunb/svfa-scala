@@ -342,9 +342,14 @@ class AndroidTaintBenchSuiteCaseStudy2Test extends FunSuite with Metrics {
   }
 
   test("in the APK smssend_packageInstaller, we should detect 5 flows") {
+    val expected = 5
+
     val svfa = new AndroidTaintBenchTest("smssend_packageInstaller") with SmssendPackageInstallerSpec
     svfa.buildSparseValueFlowGraph()
-    assert(svfa.reportConflictsSVG().size == 5)
+
+    val actual = svfa.reportConflictsSVG().size
+    this.computeMetricsByResults(expected, actual)
+    assert(actual == expected)
   }
 
   test("in the APK smssilience_fake_vertu, we should detect 2 flows") {
