@@ -221,9 +221,14 @@ class AndroidTaintBenchSuiteCaseStudy2Test extends FunSuite with Metrics {
   }
 
   test("in the APK phospy, we should detect 2 flows") {
+    val expected = 2
+
     val svfa = new AndroidTaintBenchTest("phospy") with PhospySpec
     svfa.buildSparseValueFlowGraph()
-    assert(svfa.reportConflictsSVG().size == 2)
+
+    val actual = svfa.reportConflictsSVG().size
+    this.computeMetricsByResults(expected, actual)
+    assert(actual == expected)
   }
 
   test("in the APK proxy_samp, we should detect 17 flows") {
