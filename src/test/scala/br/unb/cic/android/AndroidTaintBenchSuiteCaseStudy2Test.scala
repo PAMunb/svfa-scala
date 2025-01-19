@@ -56,9 +56,14 @@ class AndroidTaintBenchSuiteCaseStudy2Test extends FunSuite with Metrics {
   }
 
   test("in the APK chulia, we should detect 4 flow") {
+    val expected = 4
+
     val svfa = new AndroidTaintBenchTest("chulia") with ChuliaSpec
     svfa.buildSparseValueFlowGraph()
-    assert(svfa.reportConflictsSVG().size == 4)
+
+    val actual = svfa.reportConflictsSVG().size
+    this.computeMetricsByResults(expected, actual)
+    assert(actual == expected)
   }
 
   test("in the APK death_ring_materialflow, we should detect 1 flow") {
