@@ -112,15 +112,125 @@ and the tests cases are in `src/test/java/securibench`.
   - [3]
   - [5]
 
-### Taintbench: (WIP) 
+### Taintbench: (WIP)
 
-*source*: https://taintbench.github.io/taintbenchSuite/
+Paper https://doi.org/10.1007/s10664-021-10013-5 introduces TAINTBENCH and in its result section presents six experiments
+to answer one of its RQ: *How effective are taint analysis tools on TaintBench compared to DroidBench*, where FLOWDROID and AMANDROID as the chosen tools.
+
+We will focus in **Experiment 2** and **Experiment #3** and use our tool (JSVFA) to reproduce them. 
+After that, we will compare the already computed results for FLOWDROID to our results.
+ 
+
+[//]: # (In the next sections, )
+~~[Taintbench](https://github.com/TaintBench/TaintBench/releases/download/TaintBenchSuite/TaintBench.zip) contains a set o Android Apks that are old malware apps.
+We have created a file `taintbench.properties` in `src/test/resources` to set the configurations.~~
+
+Disclaimer: Although TAINTBENCH contains 203 expected taint flows https://taintbench.github.io/taintbenchSuite/,
+We have decided to use only 186 expected cases because the mentioned paper, uses as a reference, works with those amounts.
 
 #### CASE I
-[Taintbench](https://github.com/TaintBench/TaintBench/releases/download/TaintBenchSuite/TaintBench.zip) contains a set o Android Apks that are old malware apps.
-We have created a file `taintbench.properties` in `src/test/resources` to set the configurations.
 
-> failed: 38, passed: 1, ignored: 0 of 39 test (2.56%)
+This case emulates **Experiment 2 - TB2** that states:
+
+>All tools are configured with sources and sinks defined in benchmark suite.
+
+The mentioned sources and sinks can be found in https://github.com/TaintBench/TaintBench/blob/master/TB_SourcesAndSinks.txt, 
+and we have stored them in `src/test/scala/br/unb/cic/android/TaintBenchSpec.scala`.
+
+As a result, we got `37 failed and 2 passed of 39 tests` and comparing to FLOWDROID we detected the same amount of `TP(41)`
+but less amount of `FP(9)` and about metrics, we got a better `precision(0.82)`, the same `recall(0.22)` value
+and a slightly better `F-score(0.35)`.
+
+- JSVFA metrics
+
+| Expected | Actual | TP | FP | Precision | Recall | F-score  |
+|:--------:|:------:|:--:|:--:|:---------:|:------:|:--------:|
+|   186    |   50   | 41 | 9  |   0.82    |  0.22  |   0.35   |
+
+- FLOWDROID metrics from Paper https://doi.org/10.1007/s10664-021-10013-5
+
+| Expected | Actual | TP | FP | Precision | Recall | F-score  |
+|:--------:|:------:|:--:|:--:|:---------:|:------:|:--------:|
+|   186    |   55   | 41 | 14 |   0.75    |  0.22  |   0.34   |
+
+
+We can see the details from each test using JSVFA in the next table.
+
+|                      APK                      | Expected | Actual | Status |   TP   |  FP   | Precision |  Recall  | F-score  |
+|:---------------------------------------------:|:--------:|:------:|:------:|:------:|:-----:|:---------:|:--------:|:--------:| 
+|                   backflash                   |    13    |   1    | FAILED |   1    |   0   |     1     |   0.08   |   0.14   |
+|            beita_com_beita_contact            |    3     |   0    | FAILED |   0    |   0   |     0     |    0     |    0     |
+|                 cajino_baidu                  |    12    |   8    | FAILED |   8    |   0   |     1     |   0.67   |   0.80   |
+|                   chat_hook                   |    12    |   6    | FAILED |   6    |   0   |     1     |   0.50   |   0.67   |
+|                    chulia                     |    4     |   0    | FAILED |   0    |   0   |     0     |    0     |    0     |
+|            death_ring_materialflow            |    1     |   9    | FAILED |   1    |   8   |   0.11    |   1.00   |   0.20   |
+|                dsencrypt_samp                 |    1     |   1    | PASSED |   1    |   0   |     1     |    1     |    1     |
+|                   exprespam                   |    2     |   0    | FAILED |   0    |   0   |     0     |    0     |    0     |
+|                 fakeappstore                  |    3     |   0    | FAILED |   0    |   0   |     0     |    0     |    0     |
+|             fakebank_android_samp             |    5     |   0    | FAILED |   0    |   0   |     0     |    0     |    0     |
+|                   fakedaum                    |    2     |   3    | FAILED |   2    |   1   |   0.67    |   1.00   |   0.80   |
+|                   fakemart                    |    2     |   0    | FAILED |   0    |   0   |     0     |    0     |    0     |
+|                   fakeplay                    |    2     |   0    | FAILED |   0    |   0   |     0     |    0     |    0     |
+|                  faketaobao                   |    4     |   0    | FAILED |   0    |   0   |     0     |    0     |    0     |
+|                  godwon_samp                  |    6     |   0    | FAILED |   0    |   0   |     0     |    0     |    0     |
+|            hummingbad_android_samp            |    2     |   2    | PASSED |   2    |   0   |     1     |    1     |    1     |
+|                   jollyserv                   |    1     |   0    | FAILED |   0    |   0   |     0     |    0     |    0     |
+|             overlay_android_samp              |    4     |   0    | FAILED |   0    |   0   |     0     |    0     |    0     |
+|          overlaylocker2_android_samp          |    7     |   0    | FAILED |   0    |   0   |     0     |    0     |    0     |
+|                    phospy                     |    2     |   0    | FAILED |   0    |   0   |     0     |    0     |    0     |
+|                  proxy_samp                   |    17    |   11   | FAILED |   11   |   0   |   1.00    |   0.65   |   0.79   |
+|             remote_control_smack              |    17    |   0    | FAILED |   0    |   0   |     0     |    0     |    0     |
+|                    repane                     |    1     |   0    | FAILED |   0    |   0   |     0     |    0     |    0     |
+|                    Roidsec                    |    6     |   1    | FAILED |   1    |   0   |   1.00    |   0.17   |   0.29   |
+|                    samsapo                    |    4     |   0    | FAILED |   0    |   0   |     0     |    0     |    0     |
+|                    save_me                    |    25    |   6    | FAILED |   6    |   0   |   1.00    |   0.24   |   0.39   |
+|                    scipiex                    |    3     |   0    | FAILED |   0    |   0   |     0     |    0     |    0     |
+|             slocker_android_samp              |    5     |   0    | FAILED |   0    |   0   |     0     |    0     |    0     |
+|                  sms_google                   |    4     |   0    | FAILED |   0    |   0   |     0     |    0     |    0     |
+|            sms_send_locker_qqmagic            |    6     |   2    | FAILED |   2    |   0   |   1.00    |   0.33   |   0.50   |
+|           smssend_packageInstaller            |    5     |   0    | FAILED |   0    |   0   |     0     |    0     |    0     |
+|            smssilience_fake_vertu             |    2     |   0    | FAILED |   0    |   0   |     0     |    0     |    0     |
+|  smsstealer_kysn_assassincreed_android_samp   |    5     |   0    | FAILED |   0    |   0   |     0     |    0     |    0     |
+|       stels_flashplayer_android_update        |    3     |   0    | FAILED |   0    |   0   |     0     |    0     |    0     |
+|                     tetus                     |    2     |   0    | FAILED |   0    |   0   |     0     |    0     |    0     |
+|            the_interview_movieshow            |    1     |   0    | FAILED |   0    |   0   |     0     |    0     |    0     |
+|              threatjapan_uracto               |    2     |   0    | FAILED |   0    |   0   |     0     |    0     |    0     |
+|            vibleaker_android_samp             |    4     |   0    | FAILED |   0    |   0   |     0     |    0     |    0     |
+|               xbot_android_samp               |    3     |   0    | FAILED |   0    |   0   |     0     |    0     |    0     |
+|                   ~~TOTAL~~                   | ~~203~~  | ~~50~~ |   -    | ~~41~~ | ~~9~~ | ~~0.82~~  | ~~0.20~~ | ~~0.32~~ |
+|                    TOTAL*                     |   186    |   50   |   -    |   41   |   9   |   0.82    |   0.22   |   0.35   |
+
+##### Observation
+- From the 37 failing tests, 28 of them reported zero flows.
+
+#### CASE II
+
+This case emulates **Experiment 3 - TB3** that configures:
+
+>For each benchmark app, a list of sources and sinks defined in this app is used to 
+configure all tools. Each tool analyzes each benchmark app with the associated list 
+of sources and sinks 
+
+The mentioned lists can be found in https://taintbench.github.io/taintbenchSuite/, and we have stored them by individual
+files in `src/test/scala/br/unb/cic/android/specs`.
+
+As a result, we got `38 failed and 1 passed of 39 test` and comparing to FLOWDROID we detect ~~the same amount of `TP(41)`
+but less amount of `FP(9)` and about metric, we got a better `precision(0.82)`, the same `recall(0.22)` value 
+and a slightly better `F-score(0.35)`.~~ 
+
+- JSVFA metrics
+
+| Expected | Actual | TP | FP | Precision | Recall | F-score |
+|:--------:|:------:|:--:|:--:|:---------:|:------:|:-------:|
+|   186    |   -    | -  | -  |     -     |   -    |    -    |
+
+- FLOWDROID metrics from Paper https://doi.org/10.1007/s10664-021-10013-5
+
+| Expected | Actual | TP | FP | Precision | Recall | F-score  |
+|:--------:|:------:|:--:|:--:|:---------:|:------:|:--------:|
+|   186    |   -    | -  | -  |     -     |   -    |    -    |
+
+We can see the details from each test using JSVFA in the next table.
 
 |                    APK                     | Expected | Actual | Status | Precision | Recall | F-score |
 |:------------------------------------------:|:--------:|:------:|:------:|:---------:|:------:|:-------:| 
@@ -166,55 +276,8 @@ We have created a file `taintbench.properties` in `src/test/resources` to set th
 |                   TOTAL                    |   203    |  451   |   -    |   0.45    |   1    |  0.62   |
 |                   TOTAL*                   |   186    |  451   |   -    |   0.41    |   1    |  0.58   |
 
-#### CASE II
-[Taintbench](https://github.com/TaintBench/TaintBench/releases/download/TaintBenchSuite/TaintBench.zip) contains a set o Android Apks that are old malware apps.
-We have created a file `taintbench.properties` in `src/test/resources` to set the configurations.
-
-> failed: 38, passed: 1, ignored: 0 of 39 test (2.56%)
-
-|                    APK                     | Expected | Actual | Status | TP | FP | Precision | Recall | F-score |
-|:------------------------------------------:|:--------:|:------:|:------:|:--:|:--:|:---------:|:------:|:-------:| 
-|                 backflash                  |    13    |   1    | FAILED | 0  | 0  |     1     |  0.08  |  0.14   |
-|          beita_com_beita_contact           |    3     |   0    | FAILED | 0  | 0  |     0     |   0    |    0    |
-|                cajino_baidu                |    12    |   8    | FAILED | 0  | 0  |     1     |  0.67  |  0.80   |
-|                 chat_hook                  |    12    |   6    | FAILED | 0  | 0  |     1     |  0.50  |  0.67   |
-|                   chulia                   |    4     |   0    | FAILED | 0  | 0  |     0     |   0    |    0    |
-|          death_ring_materialflow           |    1     |   9    | FAILED | 0  | 0  |   0.11    |  1.00  |  0.20   |
-|               dsencrypt_samp               |    1     |   1    | PASSED | 0  | 0  |     1     |   1    |    1    |
-|                 exprespam                  |    2     |   0    | FAILED | 0  | 0  |     0     |   0    |    0    |
-|                fakeappstore                |    3     |   0    | FAILED | 0  | 0  |     0     |   0    |    0    |
-|           fakebank_android_samp            |    5     |   0    | FAILED | 0  | 0  |     0     |   0    |    0    |
-|                  fakedaum                  |    2     |   3    | FAILED | 0  | 0  |   0.67    |  1.00  |  0.80   |
-|                  fakemart                  |    2     |   0    | FAILED | 0  | 0  |     0     |   0    |    0    |
-|                  fakeplay                  |    2     |   0    | FAILED | 0  | 0  |     0     |   0    |    0    |
-|                 faketaobao                 |    4     |   0    | FAILED | 0  | 0  |     0     |   0    |    0    |
-|                godwon_samp                 |    6     |   0    | FAILED | 0  | 0  |     0     |   0    |    0    |
-|          hummingbad_android_samp           |    2     |   2    | PASSED | 0  | 0  |     1     |   1    |    1    |
-|                 jollyserv                  |    1     |   0    | FAILED | 0  | 0  |     0     |   0    |    0    |
-|            overlay_android_samp            |    4     |   0    | FAILED | 0  | 0  |     0     |   0    |    0    |
-|        overlaylocker2_android_samp         |    7     |   0    | FAILED | 0  | 0  |     0     |   0    |    0    |
-|                   phospy                   |    2     |   0    | FAILED | 0  | 0  |     0     |   0    |    0    |
-|                 proxy_samp                 |    17    |   11   | FAILED | 0  | 0  |   1.00    |  0.65  |  0.79   |
-|            remote_control_smack            |    17    |   0    | FAILED | 0  | 0  |     0     |   0    |    0    |
-|                   repane                   |    1     |   0    | FAILED | 0  | 0  |     0     |   0    |    0    |
-|                  Roidsec                   |    6     |   1    | FAILED | 0  | 0  |   1.00    |  0.17  |  0.29   |
-|                  samsapo                   |    4     |   0    | FAILED | 0  | 0  |     0     |   0    |    0    |
-|                  save_me                   |    25    |   6    | FAILED | 0  | 0  |   1.00    |  0.24  |  0.39   |
-|                  scipiex                   |    3     |   0    | FAILED | 0  | 0  |     0     |   0    |    0    |
-|            slocker_android_samp            |    5     |   0    | FAILED | 0  | 0  |     0     |   0    |    0    |
-|                 sms_google                 |    4     |   0    | FAILED | 0  | 0  |     0     |   0    |    0    |
-|          sms_send_locker_qqmagic           |    6     |   2    | FAILED | 0  | 0  |   1.00    |  0.33  |  0.50   |
-|          smssend_packageInstaller          |    5     |   0    | FAILED | 0  | 0  |     0     |   0    |    0    |
-|           smssilience_fake_vertu           |    2     |   0    | FAILED | 0  | 0  |     0     |   0    |    0    |
-| smsstealer_kysn_assassincreed_android_samp |    5     |   0    | FAILED | 0  | 0  |     0     |   0    |    0    |
-|      stels_flashplayer_android_update      |    3     |   0    | FAILED | 0  | 0  |     0     |   0    |    0    |
-|                   tetus                    |    2     |   0    | FAILED | 0  | 0  |     0     |   0    |    0    |
-|          the_interview_movieshow           |    1     |   0    | FAILED | 0  | 0  |     0     |   0    |    0    |
-|             threatjapan_uracto             |    2     |   0    | FAILED | 0  | 0  |     0     |   0    |    0    |
-|           vibleaker_android_samp           |    4     |   0    | FAILED | 0  | 0  |     0     |   0    |    0    |
-|             xbot_android_samp              |    3     |   0    | FAILED | 0  | 0  |     0     |   0    |    0    |
-|                   TOTAL                    |   203    |   50   |   -    | 0  | 0  |   1.00    |  0.25  |  0.40   |
-|                   TOTAL*                   |   186    |   50   |   -    | 0  | 0  |   1.00    |  0.27  |  0.42   |
+##### Observation
+- 
 
 ## Tasks
 ### WIP
