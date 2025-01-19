@@ -188,9 +188,14 @@ class AndroidTaintBenchSuiteCaseStudy2Test extends FunSuite with Metrics {
   }
 
   test("in the APK jollyserv, we should detect 1 flows") {
+    val expected = 1
+
     val svfa = new AndroidTaintBenchTest("jollyserv") with JollyservSpec
     svfa.buildSparseValueFlowGraph()
-    assert(svfa.reportConflictsSVG().size == 1)
+
+    val actual = svfa.reportConflictsSVG().size
+    this.computeMetricsByResults(expected, actual)
+    assert(actual == expected)
   }
 
   test("in the APK overlay_android_samp, we should detect 4 flows") {

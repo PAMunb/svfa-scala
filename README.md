@@ -258,7 +258,7 @@ We can see the details from each test using JSVFA in the next table.
 |                 faketaobao                 |    4     |   0    | FAILED | 0  | 0  |     0     |   0    |    0    | 
 |                godwon_samp                 |    6     |   0    | FAILED | 0  | 0  |     0     |   0    |    0    | 
 |          hummingbad_android_samp           |    2     |   23   | FAILED | 2  | 21 |   0.09    |  1.00  |  0.16   | 
-|                 jollyserv                  |    1     |   7    | FAILED | -  | -  |     -     |   -    |    -    | 
+|                 jollyserv                  |    1     |   7    | FAILED | 1  | 6  |   0.14    |  1.00  |  0.25   | 
 |            overlay_android_samp            |    4     |   8    | FAILED | -  | -  |     -     |   -    |    -    | 
 |        overlaylocker2_android_samp         |    7     |   34   | FAILED | -  | -  |     -     |   -    |    -    | 
 |                   phospy                   |    2     |   1    | FAILED | -  | -  |     -     |   -    |    -    | 
