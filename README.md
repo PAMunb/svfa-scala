@@ -112,7 +112,7 @@ and the tests cases are in `src/test/java/securibench`.
   - [3]
   - [5]
 
-### TAINTBENCH: (WIP)
+### TAINTBENCH:
 
 [TAINTBENCH](https://taintbench.github.io/) is a benchmark that contains a [set of old malware Android Apks](https://github.com/TaintBench/TaintBench/releases/download/TaintBenchSuite/TaintBench.zip) , 
 and it is introduced by [Paper: TaintBench: Automatic real-world malware benchmarking of Android taint analyses](https://doi.org/10.1007/s10664-021-10013-5), 
@@ -290,11 +290,12 @@ We can see the details from each test using JSVFA in the next table.
 
 ## Tasks
 ### WIP
-- [ ] Integration of Taintbench.
+- [ ] Create Git Action flow.
 
 ### TO-DO
 - [ ] Add set up project documentation.
 - [ ] Integrate Securibench as a submodule.
+- [ ] Compute metrics for Securibench results.
 - [ ] Fix bugs for Securibench in folders
   - [ ] Datastructure
   - [ ] Factory
@@ -302,5 +303,7 @@ We can see the details from each test using JSVFA in the next table.
   - [ ] Strong Update
   - [ ] Aliasing
 
+### WIP
+- [X] Integration of Taintbench.
 
 [//]: # (## License)
