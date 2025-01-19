@@ -133,9 +133,14 @@ class AndroidTaintBenchSuiteCaseStudy2Test extends FunSuite with Metrics {
   }
 
   test("in the APK fakemart, we should detect 2 flows") {
+    val expected = 2
+
     val svfa = new AndroidTaintBenchTest("fakemart") with FakemartSpec
     svfa.buildSparseValueFlowGraph()
-    assert(svfa.reportConflictsSVG().size == 2)
+
+    val actual = svfa.reportConflictsSVG().size
+    this.computeMetricsByResults(expected, actual)
+    assert(actual == expected)
   }
 
   test("in the APK fakeplay, we should detect 2 flows") {
