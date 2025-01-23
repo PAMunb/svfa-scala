@@ -62,6 +62,18 @@ and the tests cases are in `src/test/java/securibench`.
 
 > failed: 0, passed: 71, ignored: 32 of 103 test (68.93%)
 
+- JSVFA metrics
+
+| Expected | Actual | TP | FP | Precision | Recall | F-score |
+|:--------:|:------:|:--:|:--:|:---------:|:------:|:-------:|
+|    -     |   -    | -  | -  |     -     |   -    |    -    |
+
+- FLOWDROID metrics from [Paper](https://www.bodden.de/pubs/far+14flowdroid.pdf)
+
+| Expected | Actual | TP  | FP | Precision | Recall | F-score  |
+|:--------:|:------:|:---:|:--:|:---------:|:------:|:--------:|
+|   117    |  130   | 121 | 9  |     -     |   -    |    -    |
+
 - **AliasingTest** - failed: 0, passed: 4, ignored: 2 of 6 test `(66.7%)`
   - [5]
   - [6]
