@@ -70,9 +70,9 @@ and the tests cases are in `src/test/java/securibench`.
 
 - FLOWDROID metrics from [Paper](https://www.bodden.de/pubs/far+14flowdroid.pdf)
 
-| Expected | Actual | TP  | FP | Precision | Recall | F-score  |
-|:--------:|:------:|:---:|:--:|:---------:|:------:|:--------:|
-|   117    |  130   | 121 | 9  |     -     |   -    |    -    |
+| Expected | Actual | TP  | FP | Precision | Recall | F-score |
+|:--------:|:------:|:---:|:--:|:---------:|:------:|:-------:|
+|   121    |  126   | 117 | 9  |   0.93    |  0.97  |  0.95   |
 
 - **AliasingTest** - failed: 0, passed: 4, ignored: 2 of 6 test `(66.7%)`
   - [5]
