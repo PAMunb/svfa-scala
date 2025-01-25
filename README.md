@@ -200,13 +200,12 @@ and the tests cases are in `src/test/java/securibench`.
 |     TOTAL      |    3     |   0    |  0/3   | 0  | 0  |     0     |   0    |    0    |
 |       -        |    -     |   -    |   -    | -  | -  |     -     |   -    |    -    |
 | STRONG UPDATE  |          |        |        |    |    |           |        |         |
-| StrongUpdate1  |    -     |   -    |   -    | -  | -  |     -     |   -    |    -    |
-| StrongUpdate2  |    -     |   -    |   -    | -  | -  |     -     |   -    |    -    |
-| StrongUpdate3  |    -     |   -    |   -    | -  | -  |     -     |   -    |    -    |
-| StrongUpdate4  |    -     |   -    |   -    | -  | -  |     -     |   -    |    -    |
-| StrongUpdate5  |    -     |   -    |   -    | -  | -  |     -     |   -    |    -    |
-| StrongUpdate6  |    -     |   -    |   -    | -  | -  |     -     |   -    |    -    |
-|     TOTAL      |    -     |   -    |   -    | -  | -  |     -     |   -    |    -    |
+| StrongUpdate1  |    0     |   0    | PASSED | 0  | 0  |     -     |   -    |    -    |
+| StrongUpdate2  |    0     |   0    | PASSED | 0  | 0  |     -     |   -    |    -    |
+| StrongUpdate3  |    0     |   1    | FAILED | 0  | 1  |     -     |   -    |    -    |
+| StrongUpdate4  |    1     |   1    | PASSED | 1  | 0  |     -     |   -    |    -    |
+| StrongUpdate5  |    0     |   1    | FAILED | 0  | 1  |     -     |   -    |    -    |
+|     TOTAL      |    1     |   3    |  3/5   | 1  | 2  |   0.33    |  1.00  |  0.50   |
 |       -        |    -     |   -    |   -    | -  | -  |     -     |   -    |    -    |
 |       -        |    -     |   -    |   -    | -  | -  |     -     |   -    |    -    |
 
