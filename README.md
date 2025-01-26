@@ -209,8 +209,7 @@ and the tests cases are in `src/test/java/securibench`.
 - **AliasingTest** - failed: 0, passed: 4, ignored: 2 of 6 test.
 
 |      Test      | Expected | Actual | Status | TP  | FP  | Precision | Recall | F-score |
-|:--------------:|:--------:|:------:|:------:|:---:|:---:|:---------:|:------:|:-------:| 
-|    ALIASING    |          |        |        |     |     |           |        |         |
+|:--------------:|:--------:|:------:|:------:|:---:|:---:|:---------:|:------:|:-------:|
 |   Aliasing1    |    1     |   1    |   ✅    |  1  |  0  |     -     |   -    |    -    |
 |   Aliasing2    |    0     |   0    |   ✅    |  0  |  0  |     -     |   -    |    -    |
 |   Aliasing3    |    0     |   0    |   ✅    |  0  |  0  |     -     |   -    |    -    |
@@ -218,9 +217,6 @@ and the tests cases are in `src/test/java/securibench`.
 |   Aliasing5    |    1     |   0    |   ❌    |  0  |  0  |     -     |   -    |    -    |
 |   Aliasing6    |    7     |   1    |   ❌    |  1  |  0  |     -     |   -    |    -    |
 |     TOTAL      |    11    |   4    |  4/6   |  4  |  0  |   1.00    |  0.36  |  0.53   |
-
-  - [5]
-  - [6]
 
 - **ArraysTest** - failed: 0, passed: 5, ignored: 5 of 10 test `(50%)`
   - [2]
