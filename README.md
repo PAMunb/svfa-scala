@@ -75,11 +75,6 @@ and the tests cases are in `src/test/java/securibench`.
 |   121    |  126   | 117 | 9  |   0.93    |  0.97  |  0.95   |
 
 
-
-
-
-
-
 |      Test      | Expected | Actual | Status | TP  | FP  | Precision | Recall | F-score |
 |:--------------:|:--------:|:------:|:------:|:---:|:---:|:---------:|:------:|:-------:|
 |     TOTAL      |   121    |  100   |   -    | 92  |  9  |   0.91    |  0.76  |  0.83   |
@@ -229,19 +224,6 @@ and the tests cases are in `src/test/java/securibench`.
 |    Inter13     |    1     |   1    |   ✅    |  1  |  0  |     -     |   -    |    -    |
 |    Inter14     |    1     |   1    |   ✅    |  1  |  0  |     -     |   -    |    -    |
 |     TOTAL      |    16    |   12   | 10/14  | 12  |  0  |   1.00    |  0.75  |  0.86   |
-
-
-|      Test      | Expected | Actual | Status | TP  | FP  | Precision | Recall | F-score |
-|:--------------:|:--------:|:------:|:------:|:---:|:---:|:---------:|:------:|:-------:|
-|      PRED      |   N/A    |  N/A   |  N/A   | N/A | N/A |    N/A    |  N/A   |   N/A   |
-
-|      Test      | Expected | Actual | Status | TP  | FP  | Precision | Recall | F-score |
-|:--------------:|:--------:|:------:|:------:|:---:|:---:|:---------:|:------:|:-------:|
-|   REFLECTION   |   N/A    |  N/A   |  N/A   | N/A | N/A |    N/A    |  N/A   |   N/A   |
-
-|      Test      | Expected | Actual | Status | TP  | FP  | Precision | Recall | F-score |
-|:--------------:|:--------:|:------:|:------:|:---:|:---:|:---------:|:------:|:-------:|
-|   SANITIZER    |   N/A    |  N/A   |  N/A   | N/A | N/A |    N/A    |  N/A   |   N/A   |
 
 
 - **SessionTest** - failed: 0, passed: 0, ignored: 3 of 3 tests.
