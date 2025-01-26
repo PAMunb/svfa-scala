@@ -77,24 +77,6 @@ and the tests cases are in `src/test/java/securibench`.
 
 |      Test      | Expected | Actual | Status | TP  | FP  | Precision | Recall | F-score |
 |:--------------:|:--------:|:------:|:------:|:---:|:---:|:---------:|:------:|:-------:|
-|  Collection1   |    1     |   1    |   ✅    |  1  |  0  |     -     |   -    |    -    |
-|  Collection2   |    1     |   1    |   ✅    |  1  |  0  |     -     |   -    |    -    |
-|  Collection3   |    2     |   1    |   ❌    |  1  |  0  |     -     |   -    |    -    |
-|  Collection4   |    1     |   0    |   ❌    |  0  |  0  |     -     |   -    |    -    |
-|  Collection5   |    1     |   0    |   ❌    |  0  |  0  |     -     |   -    |    -    |
-|  Collection6   |    1     |   0    |   ❌    |  0  |  0  |     -     |   -    |    -    |
-|  Collection7   |    1     |   0    |   ❌    |  0  |  0  |     -     |   -    |    -    |
-|  Collection8   |    1     |   0    |   ❌    |  0  |  0  |     -     |   -    |    -    |
-|  Collection9   |    0     |   0    |   ✅    |  0  |  0  |     -     |   -    |    -    |
-|  Collection10  |    1     |   0    |   ❌    |  0  |  0  |     -     |   -    |    -    |
-|  Collection11  |    1     |   0    |   ❌    |  0  |  0  |     -     |   -    |    -    |
-|  Collection12  |    1     |   0    |   ❌    |  0  |  0  |     -     |   -    |    -    |
-|  Collection13  |    1     |   0    |   ❌    |  0  |  0  |     -     |   -    |    -    |
-|  Collection14  |    1     |   1    |   ✅    |  1  |  0  |     -     |   -    |    -    |
-|     TOTAL      |    14    |   4    |  4/14  |  4  |  0  |   1.00    |  0.29  |  0.44   |
-
-|      Test      | Expected | Actual | Status | TP  | FP  | Precision | Recall | F-score |
-|:--------------:|:--------:|:------:|:------:|:---:|:---:|:---------:|:------:|:-------:|
 | DATASTRUCTURE  |          |        |        |     |     |           |        |         |
 | DataStructure1 |    1     |   1    |   ✅    |  1  |  0  |     -     |   -    |    -    |
 | DataStructure2 |    1     |   1    |   ✅    |  1  |  0  |     -     |   -    |    -    |
@@ -243,19 +225,26 @@ and the tests cases are in `src/test/java/securibench`.
 |     TOTAL      |    59    |   58   | 38/41  | 57  |  1  |   0.98    |  0.97  |  0.97   |
 
 
-- **CollectionTest** - failed: 0, passed: 3, ignored: 12 of 15 test `(20%)`
-  - [3]
-  - [4]
-  - [5]
-  - [6]
-  - [7]
-  - [8]
-  - [9]
-  - [10]
-  - [11] * There are any assertions here, it calls test [11b]
-  - [11b]
-  - [12]
-  - [13]
+- **CollectionTest** - failed: 0, passed: 4, ignored: 10 of 14 tests.
+
+|      Test      | Expected | Actual | Status | TP  | FP  | Precision | Recall | F-score |
+|:--------------:|:--------:|:------:|:------:|:---:|:---:|:---------:|:------:|:-------:|
+|  Collection1   |    1     |   1    |   ✅    |  1  |  0  |     -     |   -    |    -    |
+|  Collection2   |    1     |   1    |   ✅    |  1  |  0  |     -     |   -    |    -    |
+|  Collection3   |    2     |   1    |   ❌    |  1  |  0  |     -     |   -    |    -    |
+|  Collection4   |    1     |   0    |   ❌    |  0  |  0  |     -     |   -    |    -    |
+|  Collection5   |    1     |   0    |   ❌    |  0  |  0  |     -     |   -    |    -    |
+|  Collection6   |    1     |   0    |   ❌    |  0  |  0  |     -     |   -    |    -    |
+|  Collection7   |    1     |   0    |   ❌    |  0  |  0  |     -     |   -    |    -    |
+|  Collection8   |    1     |   0    |   ❌    |  0  |  0  |     -     |   -    |    -    |
+|  Collection9   |    0     |   0    |   ✅    |  0  |  0  |     -     |   -    |    -    |
+|  Collection10  |    1     |   0    |   ❌    |  0  |  0  |     -     |   -    |    -    |
+|  Collection11  |    1     |   0    |   ❌    |  0  |  0  |     -     |   -    |    -    |
+|  Collection12  |    1     |   0    |   ❌    |  0  |  0  |     -     |   -    |    -    |
+|  Collection13  |    1     |   0    |   ❌    |  0  |  0  |     -     |   -    |    -    |
+|  Collection14  |    1     |   1    |   ✅    |  1  |  0  |     -     |   -    |    -    |
+|     TOTAL      |    14    |   4    |  4/14  |  4  |  0  |   1.00    |  0.29  |  0.44   |
+
 
 - **DataStructureTest** - failed: 0, passed: 5, ignored: 1 of 6 test `(83.33%)`
   - [5]
