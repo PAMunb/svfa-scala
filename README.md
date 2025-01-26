@@ -66,7 +66,7 @@ and the tests cases are in `src/test/java/securibench`.
 
 | Expected | Actual | TP | FP | Precision | Recall | F-score |
 |:--------:|:------:|:--:|:--:|:---------:|:------:|:-------:|
-|   123    |  101   | 93 | 8  |   0.92    |  0.76  |  0.83   |
+|   121    |  100   | 92 | 9  |   0.91    |  0.76  |  0.83   |
 
 - FLOWDROID metrics from [Paper](https://www.bodden.de/pubs/far+14flowdroid.pdf)
 
