@@ -75,16 +75,6 @@ and the tests cases are in `src/test/java/securibench`.
 |   121    |  126   | 117 | 9  |   0.93    |  0.97  |  0.95   |
 
 
-|      Test      | Expected | Actual | Status | TP  | FP  | Precision | Recall | F-score |
-|:--------------:|:--------:|:------:|:------:|:---:|:---:|:---------:|:------:|:-------:|
-| DATASTRUCTURE  |          |        |        |     |     |           |        |         |
-| DataStructure1 |    1     |   1    |   ✅    |  1  |  0  |     -     |   -    |    -    |
-| DataStructure2 |    1     |   1    |   ✅    |  1  |  0  |     -     |   -    |    -    |
-| DataStructure3 |    1     |   1    |   ✅    |  1  |  0  |     -     |   -    |    -    |
-| DataStructure4 |    0     |   1    |   ❌    |  0  |  1  |     -     |   -    |    -    |
-| DataStructure5 |    1     |   0    |   ❌    |  0  |  0  |     -     |   -    |    -    |
-| DataStructure6 |    1     |   1    |   ✅    |  1  |  0  |     -     |   -    |    -    |
-|     TOTAL      |    5     |   5    |  4/6   |  4  |  1  |   0.80    |  0.80  |  0.80   |
 
 |      Test      | Expected | Actual | Status | TP  | FP  | Precision | Recall | F-score |
 |:--------------:|:--------:|:------:|:------:|:---:|:---:|:---------:|:------:|:-------:|
@@ -246,8 +236,18 @@ and the tests cases are in `src/test/java/securibench`.
 |     TOTAL      |    14    |   4    |  4/14  |  4  |  0  |   1.00    |  0.29  |  0.44   |
 
 
-- **DataStructureTest** - failed: 0, passed: 5, ignored: 1 of 6 test `(83.33%)`
-  - [5]
+- **DataStructureTest** - failed: 0, passed: 4, ignored: 2 of 6 tests.
+
+|      Test      | Expected | Actual | Status | TP  | FP  | Precision | Recall | F-score |
+|:--------------:|:--------:|:------:|:------:|:---:|:---:|:---------:|:------:|:-------:|
+| DataStructure1 |    1     |   1    |   ✅    |  1  |  0  |     -     |   -    |    -    |
+| DataStructure2 |    1     |   1    |   ✅    |  1  |  0  |     -     |   -    |    -    |
+| DataStructure3 |    1     |   1    |   ✅    |  1  |  0  |     -     |   -    |    -    |
+| DataStructure4 |    0     |   1    |   ❌    |  0  |  1  |     -     |   -    |    -    |
+| DataStructure5 |    1     |   0    |   ❌    |  0  |  0  |     -     |   -    |    -    |
+| DataStructure6 |    1     |   1    |   ✅    |  1  |  0  |     -     |   -    |    -    |
+|     TOTAL      |    5     |   5    |  4/6   |  4  |  1  |   0.80    |  0.80  |  0.80   |
+
 
 - **FactoryTest** - failed: 0, passed: 2, ignored: 1 of 3 test `(66.67%)`
   - [3]
