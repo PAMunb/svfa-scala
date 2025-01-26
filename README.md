@@ -77,24 +77,6 @@ and the tests cases are in `src/test/java/securibench`.
 
 
 
-|      Test      | Expected | Actual | Status | TP  | FP  | Precision | Recall | F-score |
-|:--------------:|:--------:|:------:|:------:|:---:|:---:|:---------:|:------:|:-------:|
-|     INTER      |          |        |        |     |     |           |        |         |
-|     Inter1     |    1     |   1    |   ✅    |  1  |  0  |     -     |   -    |    -    |
-|     Inter2     |    2     |   2    |   ✅    |  2  |  0  |     -     |   -    |    -    |
-|     Inter3     |    1     |   1    |   ✅    |  1  |  0  |     -     |   -    |    -    |
-|     Inter4     |    1     |   1    |   ✅    |  1  |  0  |     -     |   -    |    -    |
-|     Inter5     |    1     |   1    |   ✅    |  1  |  0  |     -     |   -    |    -    |
-|     Inter6     |    1     |   0    |   ❌    |  0  |  0  |     -     |   -    |    -    |
-|     Inter7     |    1     |   1    |   ✅    |  1  |  0  |     -     |   -    |    -    |
-|     Inter8     |    1     |   1    |   ✅    |  1  |  0  |     -     |   -    |    -    |
-|     Inter9     |    2     |   1    |   ❌    |  1  |  0  |     -     |   -    |    -    |
-|    Inter10     |    1     |   1    |   ✅    |  1  |  0  |     -     |   -    |    -    |
-|    Inter11     |    1     |   0    |   ❌    |  0  |  0  |     -     |   -    |    -    |
-|    Inter12     |    1     |   0    |   ❌    |  0  |  0  |     -     |   -    |    -    |
-|    Inter13     |    1     |   1    |   ✅    |  1  |  0  |     -     |   -    |    -    |
-|    Inter14     |    1     |   1    |   ✅    |  1  |  0  |     -     |   -    |    -    |
-|     TOTAL      |    16    |   12   | 10/14  | 12  |  0  |   1.00    |  0.75  |  0.86   |
 
 |      Test      | Expected | Actual | Status | TP  | FP  | Precision | Recall | F-score |
 |:--------------:|:--------:|:------:|:------:|:---:|:---:|:---------:|:------:|:-------:|
@@ -253,10 +235,27 @@ and the tests cases are in `src/test/java/securibench`.
 |     TOTAL      |    3     |   4    |  2/3   |  3  |  1  |   0.75    |  1.00  |  0.86   |
 
 
-- **InterTest** - failed: 0, passed:11, ignored: 3 of 14 test `(78.57%)`
-  - [6]
-  - [11] - flaky
-  - [12]
+- **InterTest** - failed: 0, passed:10, ignored: 4 of 14 tests
+
+|      Test      | Expected | Actual | Status | TP  | FP  | Precision | Recall | F-score |
+|:--------------:|:--------:|:------:|:------:|:---:|:---:|:---------:|:------:|:-------:|
+|     INTER      |          |        |        |     |     |           |        |         |
+|     Inter1     |    1     |   1    |   ✅    |  1  |  0  |     -     |   -    |    -    |
+|     Inter2     |    2     |   2    |   ✅    |  2  |  0  |     -     |   -    |    -    |
+|     Inter3     |    1     |   1    |   ✅    |  1  |  0  |     -     |   -    |    -    |
+|     Inter4     |    1     |   1    |   ✅    |  1  |  0  |     -     |   -    |    -    |
+|     Inter5     |    1     |   1    |   ✅    |  1  |  0  |     -     |   -    |    -    |
+|     Inter6     |    1     |   0    |   ❌    |  0  |  0  |     -     |   -    |    -    |
+|     Inter7     |    1     |   1    |   ✅    |  1  |  0  |     -     |   -    |    -    |
+|     Inter8     |    1     |   1    |   ✅    |  1  |  0  |     -     |   -    |    -    |
+|     Inter9     |    2     |   1    |   ❌    |  1  |  0  |     -     |   -    |    -    |
+|    Inter10     |    1     |   1    |   ✅    |  1  |  0  |     -     |   -    |    -    |
+|    Inter11     |    1     |   0    |   ❌    |  0  |  0  |     -     |   -    |    -    |
+|    Inter12     |    1     |   0    |   ❌    |  0  |  0  |     -     |   -    |    -    |
+|    Inter13     |    1     |   1    |   ✅    |  1  |  0  |     -     |   -    |    -    |
+|    Inter14     |    1     |   1    |   ✅    |  1  |  0  |     -     |   -    |    -    |
+|     TOTAL      |    16    |   12   | 10/14  | 12  |  0  |   1.00    |  0.75  |  0.86   |
+
 
 - **SessionTest** - failed: 0, passed: 0, ignored: 3 of 3 test `(0%)`
   - [1]
