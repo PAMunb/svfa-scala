@@ -79,14 +79,6 @@ and the tests cases are in `src/test/java/securibench`.
 
 
 
-|      Test      | Expected | Actual | Status | TP  | FP  | Precision | Recall | F-score |
-|:--------------:|:--------:|:------:|:------:|:---:|:---:|:---------:|:------:|:-------:|
-| StrongUpdate1  |    0     |   0    |   ✅    |  0  |  0  |     -     |   -    |    -    |
-| StrongUpdate2  |    0     |   0    |   ✅    |  0  |  0  |     -     |   -    |    -    |
-| StrongUpdate3  |    0     |   1    |   ❌    |  0  |  1  |     -     |   -    |    -    |
-| StrongUpdate4  |    1     |   1    |   ✅    |  1  |  0  |     -     |   -    |    -    |
-| StrongUpdate5  |    0     |   1    |   ❌    |  0  |  1  |     -     |   -    |    -    |
-|     TOTAL      |    1     |   3    |  3/5   |  1  |  2  |   0.33    |  1.00  |  0.50   |
 
 |      Test      | Expected | Actual | Status | TP  | FP  | Precision | Recall | F-score |
 |:--------------:|:--------:|:------:|:------:|:---:|:---:|:---------:|:------:|:-------:|
@@ -262,9 +254,17 @@ and the tests cases are in `src/test/java/securibench`.
 |     TOTAL      |    3     |   0    |  0/3   |  0  |  0  |     0     |   0    |    0    |
 
 
-- **StrongUpdateTest** - failed: 0, passed: 3, ignored: 2 of 5 test `(60%)`
-  - [3]
-  - [5]
+- **StrongUpdateTest** - failed: 0, passed: 3, ignored: 2 of 5 tests.
+
+|      Test      | Expected | Actual | Status | TP  | FP  | Precision | Recall | F-score |
+|:--------------:|:--------:|:------:|:------:|:---:|:---:|:---------:|:------:|:-------:|
+| StrongUpdate1  |    0     |   0    |   ✅    |  0  |  0  |     -     |   -    |    -    |
+| StrongUpdate2  |    0     |   0    |   ✅    |  0  |  0  |     -     |   -    |    -    |
+| StrongUpdate3  |    0     |   1    |   ❌    |  0  |  1  |     -     |   -    |    -    |
+| StrongUpdate4  |    1     |   1    |   ✅    |  1  |  0  |     -     |   -    |    -    |
+| StrongUpdate5  |    0     |   1    |   ❌    |  0  |  1  |     -     |   -    |    -    |
+|     TOTAL      |    1     |   3    |  3/5   |  1  |  2  |   0.33    |  1.00  |  0.50   |
+
 
 ### Taintbench: (WIP) 
 
