@@ -164,10 +164,10 @@ and the tests cases are in `src/test/java/securibench`.
 | DataStructure1 |    1     |   1    | PASSED |  1  |  0  |     -     |   -    |    -    |
 | DataStructure2 |    1     |   1    | PASSED |  1  |  0  |     -     |   -    |    -    |
 | DataStructure3 |    1     |   1    | PASSED |  1  |  0  |     -     |   -    |    -    |
-| DataStructure4 |    1     |   1    | PASSED |  1  |  0  |     -     |   -    |    -    |
+| DataStructure4 |    0     |   1    | FAILED |  0  |  1  |     -     |   -    |    -    |
 | DataStructure5 |    1     |   0    | FAILED |  0  |  0  |     -     |   -    |    -    |
 | DataStructure6 |    1     |   1    | PASSED |  1  |  0  |     -     |   -    |    -    |
-|     TOTAL      |    6     |   5    |  5/6   |  5  |  0  |   1.00    |  0.83  |  0.91   |
+|     TOTAL      |    5     |   5    |  4/6   |  4  |  1  |   0.80    |  0.80  |  0.80   |
 |       -        |    -     |   -    |   -    |  -  |  -  |     -     |   -    |    -    |
 |    FACTORY     |          |        |        |     |     |           |        |         |
 |    Factory1    |    1     |   1    | PASSED |  1  |  0  |     -     |   -    |    -    |
@@ -212,7 +212,7 @@ and the tests cases are in `src/test/java/securibench`.
 | StrongUpdate5  |    0     |   1    | FAILED |  0  |  1  |     -     |   -    |    -    |
 |     TOTAL      |    1     |   3    |  3/5   |  1  |  2  |   0.33    |  1.00  |  0.50   |
 |       -        |    -     |   -    |   -    |  -  |  -  |     -     |   -    |    -    |
-|     TOTAL      |   121    |  101   |   -    | 93  |  8  |   0.92    |  0.77  |  0.84   |
+|     TOTAL      |   120    |  100   |   -    | 92  |  9  |   0.91    |  0.77  |  0.83   |
 
 * Flowdroid is not taking in count the TP expected in the test group: STRONG UPDATE
 
