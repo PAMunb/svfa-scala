@@ -78,24 +78,6 @@ and the tests cases are in `src/test/java/securibench`.
 
 
 
-|      Test      | Expected | Actual | Status | TP  | FP  | Precision | Recall | F-score |
-|:--------------:|:--------:|:------:|:------:|:---:|:---:|:---------:|:------:|:-------:|
-|      PRED      |   N/A    |  N/A   |  N/A   | N/A | N/A |    N/A    |  N/A   |   N/A   |
-
-|      Test      | Expected | Actual | Status | TP  | FP  | Precision | Recall | F-score |
-|:--------------:|:--------:|:------:|:------:|:---:|:---:|:---------:|:------:|:-------:|
-|   REFLECTION   |   N/A    |  N/A   |  N/A   | N/A | N/A |    N/A    |  N/A   |   N/A   |
-
-|      Test      | Expected | Actual | Status | TP  | FP  | Precision | Recall | F-score |
-|:--------------:|:--------:|:------:|:------:|:---:|:---:|:---------:|:------:|:-------:|
-|   SANITIZER    |   N/A    |  N/A   |  N/A   | N/A | N/A |    N/A    |  N/A   |   N/A   |
-
-|      Test      | Expected | Actual | Status | TP  | FP  | Precision | Recall | F-score |
-|:--------------:|:--------:|:------:|:------:|:---:|:---:|:---------:|:------:|:-------:|
-|    Session1    |    1     |   0    |   ❌    |  0  |  0  |     -     |   -    |    -    |
-|    Session2    |    1     |   0    |   ❌    |  0  |  0  |     -     |   -    |    -    |
-|    Session3    |    1     |   0    |   ❌    |  0  |  0  |     -     |   -    |    -    |
-|     TOTAL      |    3     |   0    |  0/3   |  0  |  0  |     0     |   0    |    0    |
 
 |      Test      | Expected | Actual | Status | TP  | FP  | Precision | Recall | F-score |
 |:--------------:|:--------:|:------:|:------:|:---:|:---:|:---------:|:------:|:-------:|
@@ -257,10 +239,28 @@ and the tests cases are in `src/test/java/securibench`.
 |     TOTAL      |    16    |   12   | 10/14  | 12  |  0  |   1.00    |  0.75  |  0.86   |
 
 
-- **SessionTest** - failed: 0, passed: 0, ignored: 3 of 3 test `(0%)`
-  - [1]
-  - [2]
-  - [3]
+|      Test      | Expected | Actual | Status | TP  | FP  | Precision | Recall | F-score |
+|:--------------:|:--------:|:------:|:------:|:---:|:---:|:---------:|:------:|:-------:|
+|      PRED      |   N/A    |  N/A   |  N/A   | N/A | N/A |    N/A    |  N/A   |   N/A   |
+
+|      Test      | Expected | Actual | Status | TP  | FP  | Precision | Recall | F-score |
+|:--------------:|:--------:|:------:|:------:|:---:|:---:|:---------:|:------:|:-------:|
+|   REFLECTION   |   N/A    |  N/A   |  N/A   | N/A | N/A |    N/A    |  N/A   |   N/A   |
+
+|      Test      | Expected | Actual | Status | TP  | FP  | Precision | Recall | F-score |
+|:--------------:|:--------:|:------:|:------:|:---:|:---:|:---------:|:------:|:-------:|
+|   SANITIZER    |   N/A    |  N/A   |  N/A   | N/A | N/A |    N/A    |  N/A   |   N/A   |
+
+
+- **SessionTest** - failed: 0, passed: 0, ignored: 3 of 3 tests.
+
+|      Test      | Expected | Actual | Status | TP  | FP  | Precision | Recall | F-score |
+|:--------------:|:--------:|:------:|:------:|:---:|:---:|:---------:|:------:|:-------:|
+|    Session1    |    1     |   0    |   ❌    |  0  |  0  |     -     |   -    |    -    |
+|    Session2    |    1     |   0    |   ❌    |  0  |  0  |     -     |   -    |    -    |
+|    Session3    |    1     |   0    |   ❌    |  0  |  0  |     -     |   -    |    -    |
+|     TOTAL      |    3     |   0    |  0/3   |  0  |  0  |     0     |   0    |    0    |
+
 
 - **StrongUpdateTest** - failed: 0, passed: 3, ignored: 2 of 5 test `(60%)`
   - [3]
