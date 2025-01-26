@@ -74,19 +74,6 @@ and the tests cases are in `src/test/java/securibench`.
 |:--------:|:------:|:---:|:--:|:---------:|:------:|:-------:|
 |   121    |  126   | 117 | 9  |   0.93    |  0.97  |  0.95   |
 
-|      Test      | Expected | Actual | Status | TP  | FP  | Precision | Recall | F-score |
-|:--------------:|:--------:|:------:|:------:|:---:|:---:|:---------:|:------:|:-------:|
-|     Array1     |    1     |   1    |   ✅    |  1  |  0  |     -     |   -    |    -    |
-|     Array2     |    1     |   3    |   ❌    |  1  |  2  |     -     |   -    |    -    |
-|     Array3     |    1     |   1    |   ✅    |  1  |  0  |     -     |   -    |    -    |
-|     Array4     |    1     |   1    |   ✅    |  1  |  0  |     -     |   -    |    -    |
-|     Array5     |    0     |   1    |   ❌    |  0  |  1  |     -     |   -    |    -    |
-|     Array6     |    1     |   1    |   ✅    |  1  |  0  |     -     |   -    |    -    |
-|     Array7     |    1     |   1    |   ✅    |  1  |  0  |     -     |   -    |    -    |
-|     Array8     |    1     |   2    |   ❌    |  1  |  1  |     -     |   -    |    -    |
-|     Array9     |    1     |   0    |   ❌    |  0  |  0  |     -     |   -    |    -    |
-|    Array10     |    1     |   0    |   ❌    |  0  |  0  |     -     |   -    |    -    |
-|     TOTAL      |    9     |   11   |  5/10  |  7  |  4  |   0.64    |  0.78  |  0.70   |
 
 |      Test      | Expected | Actual | Status | TP  | FP  | Precision | Recall | F-score |
 |:--------------:|:--------:|:------:|:------:|:---:|:---:|:---------:|:------:|:-------:|
@@ -236,12 +223,22 @@ and the tests cases are in `src/test/java/securibench`.
 |   Aliasing6    |    7     |   1    |   ❌    |  1  |  0  |     -     |   -    |    -    |
 |     TOTAL      |    11    |   4    |  4/6   |  4  |  0  |   1.00    |  0.36  |  0.53   |
 
-- **ArraysTest** - failed: 0, passed: 5, ignored: 5 of 10 test `(50%)`
-  - [2]
-  - [5]
-  - [8]
-  - [9]
-  - [10]
+- **ArraysTest** - failed: 0, passed: 5, ignored: 5 of 10 test.
+
+|      Test      | Expected | Actual | Status | TP  | FP  | Precision | Recall | F-score |
+|:--------------:|:--------:|:------:|:------:|:---:|:---:|:---------:|:------:|:-------:|
+|     Array1     |    1     |   1    |   ✅    |  1  |  0  |     -     |   -    |    -    |
+|     Array2     |    1     |   3    |   ❌    |  1  |  2  |     -     |   -    |    -    |
+|     Array3     |    1     |   1    |   ✅    |  1  |  0  |     -     |   -    |    -    |
+|     Array4     |    1     |   1    |   ✅    |  1  |  0  |     -     |   -    |    -    |
+|     Array5     |    0     |   1    |   ❌    |  0  |  1  |     -     |   -    |    -    |
+|     Array6     |    1     |   1    |   ✅    |  1  |  0  |     -     |   -    |    -    |
+|     Array7     |    1     |   1    |   ✅    |  1  |  0  |     -     |   -    |    -    |
+|     Array8     |    1     |   2    |   ❌    |  1  |  1  |     -     |   -    |    -    |
+|     Array9     |    1     |   0    |   ❌    |  0  |  0  |     -     |   -    |    -    |
+|    Array10     |    1     |   0    |   ❌    |  0  |  0  |     -     |   -    |    -    |
+|     TOTAL      |    9     |   11   |  5/10  |  7  |  4  |   0.64    |  0.78  |  0.70   |
+
 
 - **BasicTest** - failed: 0, passed: 38, ignored: 3 of 41 test `(92.68%)`; [40] does not exist
   - [36]
