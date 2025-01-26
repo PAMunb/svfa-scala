@@ -76,13 +76,6 @@ and the tests cases are in `src/test/java/securibench`.
 
 
 
-|      Test      | Expected | Actual | Status | TP  | FP  | Precision | Recall | F-score |
-|:--------------:|:--------:|:------:|:------:|:---:|:---:|:---------:|:------:|:-------:|
-|    FACTORY     |          |        |        |     |     |           |        |         |
-|    Factory1    |    1     |   1    |   ✅    |  1  |  0  |     -     |   -    |    -    |
-|    Factory2    |    1     |   1    |   ✅    |  1  |  0  |     -     |   -    |    -    |
-|    Factory3    |    1     |   2    |   ❌    |  1  |  1  |     -     |   -    |    -    |
-|     TOTAL      |    3     |   4    |  2/3   |  3  |  1  |   0.75    |  1.00  |  0.86   |
 
 |      Test      | Expected | Actual | Status | TP  | FP  | Precision | Recall | F-score |
 |:--------------:|:--------:|:------:|:------:|:---:|:---:|:---------:|:------:|:-------:|
@@ -249,8 +242,16 @@ and the tests cases are in `src/test/java/securibench`.
 |     TOTAL      |    5     |   5    |  4/6   |  4  |  1  |   0.80    |  0.80  |  0.80   |
 
 
-- **FactoryTest** - failed: 0, passed: 2, ignored: 1 of 3 test `(66.67%)`
-  - [3]
+- **FactoryTest** - failed: 0, passed: 2, ignored: 1 of 3 tests.
+
+|      Test      | Expected | Actual | Status | TP  | FP  | Precision | Recall | F-score |
+|:--------------:|:--------:|:------:|:------:|:---:|:---:|:---------:|:------:|:-------:|
+|    FACTORY     |          |        |        |     |     |           |        |         |
+|    Factory1    |    1     |   1    |   ✅    |  1  |  0  |     -     |   -    |    -    |
+|    Factory2    |    1     |   1    |   ✅    |  1  |  0  |     -     |   -    |    -    |
+|    Factory3    |    1     |   2    |   ❌    |  1  |  1  |     -     |   -    |    -    |
+|     TOTAL      |    3     |   4    |  2/3   |  3  |  1  |   0.75    |  1.00  |  0.86   |
+
 
 - **InterTest** - failed: 0, passed:11, ignored: 3 of 14 test `(78.57%)`
   - [6]
