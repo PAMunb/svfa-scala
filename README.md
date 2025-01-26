@@ -152,13 +152,13 @@ and the tests cases are in `src/test/java/securibench`.
 |  Collection6   |    1     |   0    | FAILED |  0  |  0  |     -     |   -    |    -    |
 |  Collection7   |    1     |   0    | FAILED |  0  |  0  |     -     |   -    |    -    |
 |  Collection8   |    1     |   0    | FAILED |  0  |  0  |     -     |   -    |    -    |
-|  Collection9   |    1     |   0    | FAILED |  0  |  0  |     -     |   -    |    -    |
+|  Collection9   |    0     |   0    | PASSED |  0  |  0  |     -     |   -    |    -    |
 |  Collection10  |    1     |   0    | FAILED |  0  |  0  |     -     |   -    |    -    |
 |  Collection11  |    1     |   0    | FAILED |  0  |  0  |     -     |   -    |    -    |
 |  Collection12  |    1     |   0    | FAILED |  0  |  0  |     -     |   -    |    -    |
 |  Collection13  |    1     |   0    | FAILED |  0  |  0  |     -     |   -    |    -    |
 |  Collection14  |    1     |   1    | PASSED |  1  |  0  |     -     |   -    |    -    |
-|     TOTAL      |    15    |   4    |  3/14  |  4  |  0  |   1.00    |  0.27  |  0.42   |
+|     TOTAL      |    14    |   4    |  4/14  |  4  |  0  |   1.00    |  0.29  |  0.44   |
 |       -        |    -     |   -    |   -    |  -  |  -  |     -     |   -    |    -    |
 | DATASTRUCTURE  |          |        |        |     |     |           |        |         |
 | DataStructure1 |    1     |   1    | PASSED |  1  |  0  |     -     |   -    |    -    |
@@ -212,7 +212,7 @@ and the tests cases are in `src/test/java/securibench`.
 | StrongUpdate5  |    0     |   1    | FAILED |  0  |  1  |     -     |   -    |    -    |
 |     TOTAL      |    1     |   3    |  3/5   |  1  |  2  |   0.33    |  1.00  |  0.50   |
 |       -        |    -     |   -    |   -    |  -  |  -  |     -     |   -    |    -    |
-|     TOTAL      |   122    |  101   |   -    | 93  |  8  |   0.92    |  0.76  |  0.83   |
+|     TOTAL      |   121    |  101   |   -    | 93  |  8  |   0.92    |  0.77  |  0.84   |
 
 * Flowdroid is not taking in count the TP expected in the test group: STRONG UPDATE
 
