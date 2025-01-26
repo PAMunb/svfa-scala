@@ -64,9 +64,18 @@ and the tests cases are in `src/test/java/securibench`.
 
 - JSVFA metrics
 
-| Expected | Actual | TP | FP | Precision | Recall | F-score |
-|:--------:|:------:|:--:|:--:|:---------:|:------:|:-------:|
-|   121    |  100   | 92 | 9  |   0.91    |  0.76  |  0.83   |
+|     Test      | Expected | Actual | TP  | FP  | Precision | Recall | F-score |
+|:-------------:|:--------:|:------:|:---:|:---:|:---------:|:------:|:-------:|
+|   Aliasing    |    11    |   4    |  4  |  0  |   1.00    |  0.36  |  0.53   |
+|     Array     |    9     |   11   |  7  |  4  |   0.64    |  0.78  |  0.70   |
+|     Basic     |    59    |   58   | 57  |  1  |   0.98    |  0.97  |  0.97   |
+|  Collection   |    14    |   4    |  4  |  0  |   1.00    |  0.29  |  0.44   |
+| DataStructure |    5     |   5    |  4  |  1  |   0.80    |  0.80  |  0.80   |
+|    Factory    |    3     |   4    |  3  |  1  |   0.75    |  1.00  |  0.86   |
+|     Inter     |    16    |   12   | 12  |  0  |   1.00    |  0.75  |  0.86   |
+|    Session    |    3     |   0    |  0  |  0  |     0     |   0    |    0    |
+| StrongUpdate  |    1     |   3    |  1  |  2  |   0.33    |  1.00  |  0.50   |
+|   **TOTAL**   |   121    |  100   | 92  |  9  |   0.91    |  0.76  |  0.83   |
 
 - FLOWDROID metrics from [Paper](https://www.bodden.de/pubs/far+14flowdroid.pdf)
 
@@ -74,10 +83,6 @@ and the tests cases are in `src/test/java/securibench`.
 |:--------:|:------:|:---:|:--:|:---------:|:------:|:-------:|
 |   121    |  126   | 117 | 9  |   0.93    |  0.97  |  0.95   |
 
-
-|      Test      | Expected | Actual | Status | TP  | FP  | Precision | Recall | F-score |
-|:--------------:|:--------:|:------:|:------:|:---:|:---:|:---------:|:------:|:-------:|
-|     TOTAL      |   121    |  100   |   -    | 92  |  9  |   0.91    |  0.76  |  0.83   |
 
 * Flowdroid is not taking in count the TP expected in the test group: STRONG UPDATE
 
@@ -197,7 +202,6 @@ and the tests cases are in `src/test/java/securibench`.
 
 |      Test      | Expected | Actual | Status | TP  | FP  | Precision | Recall | F-score |
 |:--------------:|:--------:|:------:|:------:|:---:|:---:|:---------:|:------:|:-------:|
-|    FACTORY     |          |        |        |     |     |           |        |         |
 |    Factory1    |    1     |   1    |   ✅    |  1  |  0  |     -     |   -    |    -    |
 |    Factory2    |    1     |   1    |   ✅    |  1  |  0  |     -     |   -    |    -    |
 |    Factory3    |    1     |   2    |   ❌    |  1  |  1  |     -     |   -    |    -    |
@@ -208,7 +212,6 @@ and the tests cases are in `src/test/java/securibench`.
 
 |      Test      | Expected | Actual | Status | TP  | FP  | Precision | Recall | F-score |
 |:--------------:|:--------:|:------:|:------:|:---:|:---:|:---------:|:------:|:-------:|
-|     INTER      |          |        |        |     |     |           |        |         |
 |     Inter1     |    1     |   1    |   ✅    |  1  |  0  |     -     |   -    |    -    |
 |     Inter2     |    2     |   2    |   ✅    |  2  |  0  |     -     |   -    |    -    |
 |     Inter3     |    1     |   1    |   ✅    |  1  |  0  |     -     |   -    |    -    |
