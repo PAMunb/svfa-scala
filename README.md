@@ -212,9 +212,9 @@ and the tests cases are in `src/test/java/securibench`.
 | StrongUpdate5  |    0     |   1    | FAILED |  0  |  1  |     -     |   -    |    -    |
 |     TOTAL      |    1     |   3    |  3/5   |  1  |  2  |   0.33    |  1.00  |  0.50   |
 |       -        |    -     |   -    |   -    |  -  |  -  |     -     |   -    |    -    |
-|     TOTAL      |   123    |  101   |   -    | 93  |  8  |   0.92    |  0.76  |  0.83   |
+|     TOTAL      |   122    |  101   |   -    | 93  |  8  |   0.92    |  0.76  |  0.83   |
 
-| TOTAL |    -     |   -    |   -    | -  | -  |     -     |   -    |    -    |
+* Flowdroid is not taking in count the TP expected in the test group: STRONG UPDATE
 
 - **AliasingTest** - failed: 0, passed: 4, ignored: 2 of 6 test `(66.7%)`
   - [5]
