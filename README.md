@@ -62,24 +62,26 @@ and the tests cases are in `src/test/java/securibench`.
 
 > failed: 0, passed: 71, ignored: 32 of 103 test (68.93%)
 
-#### JSVFA metrics
+- JSVFA metrics
 
-|     Test      |   TP   | FP  | 
-|:-------------:|:------:|:---:|
-|   Aliasing    |   4    |  0  |   
-|     Array     |   7    |  4  |   
-|     Basic     |   57   |  1  |  
-|  Collection   |   4    |  0  | 
-| DataStructure |   4    |  1  |  
-|    Factory    |   3    |  1  |  
-|     Inter     |   12   |  0  |  
-|    Session    |   0    |  0  |  
-| StrongUpdate  |   1    |  2  |   
-|   **TOTAL**   | 92/121 |  9  |       
+|     Test      | Expected |   TP   | FP  | 
+|:-------------:|:--------:|:------:|:---:|
+|   Aliasing    |    11    |   4    |  0  |   
+|     Array     |    9     |   7    |  4  |   
+|     Basic     |    59    |   57   |  1  |  
+|  Collection   |    14    |   4    |  0  | 
+| DataStructure |    5     |   4    |  1  |  
+|    Factory    |    3     |   3    |  1  |  
+|     Inter     |    16    |   12   |  0  |  
+|    Session    |    3     |   0    |  0  |  
+| StrongUpdate  |    1     |   1    |  2  |   
+|   **TOTAL**   |   121    | 92/121 |  9  |       
 
-- **Precision:** 0.91
-- **Recall:** 0.76
-- **F-score:** 0.83
+**Precision:** 0.91
+
+**Recall:** 0.76
+
+**F-score:** 0.83
 
 - FLOWDROID metrics from [Paper](https://www.bodden.de/pubs/far+14flowdroid.pdf)
 
