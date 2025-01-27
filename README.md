@@ -83,9 +83,22 @@ and the tests cases are in `src/test/java/securibench`.
 
 #### FLOWDROID metrics from [Paper](https://www.bodden.de/pubs/far+14flowdroid.pdf)
 
-| Expected | Actual | TP  | FP | Precision | Recall | F-score |
-|:--------:|:------:|:---:|:--:|:---------:|:------:|:-------:|
-|   121    |  126   | 117 | 9  |   0.93    |  0.97  |  0.95   |
+|     Test      |   TP    | FP  | 
+|:-------------:|:-------:|:---:|
+|   Aliasing    |  11/11  |  0  |   
+|     Array     |   9/9   |  4  |   
+|     Basic     |  58/60  |  1  |  
+|  Collection   |  14/14  |  0  | 
+| DataStructure |   5/5   |  1  |  
+|    Factory    |   3/3   |  1  |  
+|     Inter     |  14/16  |  0  |  
+|    Session    |   3/3   |  0  |  
+| StrongUpdate  |   0/0   |  2  |   
+|   **TOTAL**   | 117/121 |  9  |   
+
+- **Precision:** 0.93
+- **Recall:** 0.97
+- **F-score:** 0.95
 
 
 * Flowdroid is not taking in count the TP expected in the test group: STRONG UPDATE
