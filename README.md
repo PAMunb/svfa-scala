@@ -176,7 +176,7 @@ In the next tables, there is detailed information about each group of tests run.
 |    Basic37     |    1     |   1    |   ✅    |  1  |  0  |     -     |   -    |    -    |
 |    Basic38     |    1     |   2    |   ❌    |  1  |  1  |     -     |   -    |    -    |
 |    Basic39     |    1     |   1    |   ✅    |  1  |  0  |     -     |   -    |    -    |
-|    Basic40     |    -     |   -    |   -    |  -  |  -  |     -     |   -    |    -    |
+|    Basic40     |   N/A    |  N/A   |  N/A   | N/A | N/A |    N/A    |  N/A   |   N/A   |
 |    Basic41     |    1     |   1    |   ✅    |  1  |  0  |     -     |   -    |    -    |
 |    Basic42     |    1     |   0    |   ❌    |  0  |  0  |     -     |   -    |    -    |
 |     TOTAL      |    59    |   58   | 38/41  | 57  |  1  |   0.98    |  0.97  |  0.97   |
