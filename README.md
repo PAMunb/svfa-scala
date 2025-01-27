@@ -57,10 +57,9 @@ This project integrates 2 well-known benchmarks.
 
 ### Securibench
 
-This benchmark was integrated because it is also used in the [FlowDroid Project](https://github.com/secure-software-engineering/FlowDroid) 
-and the tests cases are in `src/test/java/securibench`.
+This benchmark was integrated because it is also used in the [FlowDroid Project](https://github.com/secure-software-engineering/FlowDroid) and tests cases are in `src/test/java/securibench`.
 
-> failed: 0, passed: 71, ignored: 32 of 103 test (68.93%)
+> failed: 0, passed: 71, ignored: 32 of 103 tests
 
 #### JSVFA metrics
 
@@ -100,9 +99,11 @@ and the tests cases are in `src/test/java/securibench`.
 - **Recall:** 0.97
 - **F-score:** 0.95
 
+**OBSERVATIONS**
+- Flowdroid is not taking in count the TP expected in StrongUpdate4;
+- Test Basic40 is commented in the test suite so the amount of TP differs from the original run by Flowdroid; 
 
-* Flowdroid is not taking in count the TP expected in the test group: STRONG UPDATE
-
+In the next tables, there is detailed information about each group of tests run.
 - **AliasingTest** - failed: 0, passed: 4, ignored: 2 of 6 test.
 
 |      Test      | Expected | Actual | Status | TP  | FP  | Precision | Recall | F-score |
