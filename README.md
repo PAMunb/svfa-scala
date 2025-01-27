@@ -64,18 +64,18 @@ and the tests cases are in `src/test/java/securibench`.
 
 - JSVFA metrics
 
-|     Test      | Expected |   TP   | FP  | 
-|:-------------:|:--------:|:------:|:---:|
-|   Aliasing    |    11    |   4    |  0  |   
-|     Array     |    9     |   7    |  4  |   
-|     Basic     |    59    |   57   |  1  |  
-|  Collection   |    14    |   4    |  0  | 
-| DataStructure |    5     |   4    |  1  |  
-|    Factory    |    3     |   3    |  1  |  
-|     Inter     |    16    |   12   |  0  |  
-|    Session    |    3     |   0    |  0  |  
-| StrongUpdate  |    1     |   1    |  2  |   
-|   **TOTAL**   |   121    | 92/121 |  9  |       
+|     Test      |   TP   | FP  | 
+|:-------------:|:------:|:---:|
+|   Aliasing    |  4/11  |  0  |   
+|     Array     |  7/9   |  4  |   
+|     Basic     | 57/59  |  1  |  
+|  Collection   |  4/14  |  0  | 
+| DataStructure |  4/5   |  1  |  
+|    Factory    |  3/3   |  1  |  
+|     Inter     | 12/16  |  0  |  
+|    Session    |  0/3   |  0  |  
+| StrongUpdate  |  1/1   |  2  |   
+|   **TOTAL**   | 92/121 |  9  |       
 
 **Precision:** 0.91
 
