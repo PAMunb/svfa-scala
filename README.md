@@ -59,7 +59,7 @@ This project integrates 2 well-known benchmarks.
 
 This benchmark was integrated because it is also used in the [FlowDroid Project](https://github.com/secure-software-engineering/FlowDroid) and tests cases are in `src/test/java/securibench`.
 
-> failed: 0, passed: 71, ignored: 32 of 103 tests
+> failed: 0, passed: 70, ignored: 32 of 102 tests
 
 #### JSVFA metrics
 
