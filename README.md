@@ -59,9 +59,32 @@ This project integrates 2 well-known benchmarks.
 
 This benchmark was integrated because it is also used in the [FlowDroid Project](https://github.com/secure-software-engineering/FlowDroid) and tests cases are in `src/test/java/securibench`.
 
-> failed: 0, passed: 70, ignored: 32 of 102 tests
+#### JSVFA old-metrics 
+
+> failed: 0, passed: 63, ignored: 39 of 102 tests.
+
+|     Test      |   TP   | FP |
+|:-------------:|:------:|:--:|
+|   Aliasing    | 10/11  | 0  |   
+|     Array     |  0/9   | 0  |   
+|     Basic     | 56/59  | 2  |  
+|  Collection   |  2/14  | 1  |
+| DataStructure |  5/5   | 2  |
+|    Factory    |  3/3   | 1  |  
+|     Inter     | 10/16  | 0  |  
+|    Session    |  0/3   | 0  |  
+| StrongUpdate  |  0/1   | 0  |   
+|   **TOTAL**   | 86/121 | 6  |
+
+- **Precision:** 0.93
+- **Recall:** 0.71
+- **F-score:** 0.81
+
+To have detailed information about each group of tests run, [see here.](old-metrics) (*computed in in March, 2023.*)
 
 #### JSVFA metrics
+
+> failed: 0, passed: 70, ignored: 32 of 102 tests
 
 |     Test      |   TP   | FP  | 
 |:-------------:|:------:|:---:|
