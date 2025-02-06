@@ -233,6 +233,8 @@ To have detailed information about each group of tests run, [see here.](taintben
 - [ ] Create Git Action flow.
 
 ### TO-DO
+- [ ] Finish integration of Taintbench.
+- [ ] Check if each test in Securibench has the right expected values.
 - [ ] Add set up project documentation.
 - [ ] Integrate Securibench as a submodule.
 - [ ] Compute metrics for Securibench results.
@@ -243,7 +245,7 @@ To have detailed information about each group of tests run, [see here.](taintben
   - [ ] Strong Update
   - [ ] Aliasing
 
-### WIP
+### DONE
 - [X] Integration of Taintbench.
 
 [//]: # (## License)

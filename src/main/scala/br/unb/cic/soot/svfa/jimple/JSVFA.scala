@@ -280,7 +280,7 @@ abstract class JSVFA
 
     val body = method.retrieveActiveBody()
 
-//    println(body)
+    // println(body)
 
     val graph = new ExceptionalUnitGraph(body)
     val defs = new SimpleLocalDefs(graph)
