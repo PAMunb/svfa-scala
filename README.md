@@ -80,7 +80,7 @@ This benchmark was integrated because it is also used in the [FlowDroid Project]
 - **Recall:** 0.76
 - **F-score:** 0.83
 
-To have detailed information about each group of tests run, [see here.](oldmetrics.md)
+To have detailed information about each group of tests run, [see here.](new-metrics)
 
 #### FLOWDROID metrics from [Paper](https://www.bodden.de/pubs/far+14flowdroid.pdf)
 
