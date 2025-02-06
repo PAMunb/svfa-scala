@@ -57,60 +57,84 @@ This project integrates 2 well-known benchmarks.
 
 ### Securibench
 
-This benchmark was integrated because it is also used in the [FlowDroid Project](https://github.com/secure-software-engineering/FlowDroid) 
-and the tests cases are in `src/test/java/securibench`.
+This benchmark was integrated because it is also used in the [FlowDroid Project](https://github.com/secure-software-engineering/FlowDroid) and tests cases are in `src/test/java/securibench`.
 
-> failed: 0, passed: 71, ignored: 32 of 103 test (68.93%)
+#### JSVFA metrics (old)
 
-- **AliasingTest** - failed: 0, passed: 4, ignored: 2 of 6 test `(66.7%)`
-  - [5]
-  - [6]
+> failed: 0, passed: 63, ignored: 39 of 102 tests.
 
-- **ArraysTest** - failed: 0, passed: 5, ignored: 5 of 10 test `(50%)`
-  - [2]
-  - [5]
-  - [8]
-  - [9]
-  - [10]
+|     Test      |   TP   | FP |
+|:-------------:|:------:|:--:|
+|   Aliasing    | 10/11  | 0  |   
+|     Array     |  0/9   | 0  |   
+|     Basic     | 56/59  | 2  |  
+|  Collection   |  2/14  | 1  |
+| DataStructure |  5/5   | 2  |
+|    Factory    |  3/3   | 1  |  
+|     Inter     | 10/16  | 0  |  
+|    Session    |  0/3   | 0  |  
+| StrongUpdate  |  0/1   | 0  |   
+|   **TOTAL**   | 86/121 | 6  |
 
-- **BasicTest** - failed: 0, passed: 38, ignored: 3 of 41 test `(92.68%)`; [40] does not exist
-  - [36]
-  - [38]
-  - [42]
+- **Precision:** 0.93
+- **Recall:** 0.71
+- **F-score:** 0.81
 
-- **CollectionTest** - failed: 0, passed: 3, ignored: 12 of 15 test `(20%)`
-  - [3]
-  - [4]
-  - [5]
-  - [6]
-  - [7]
-  - [8]
-  - [9]
-  - [10]
-  - [11] * There are any assertions here, it calls test [11b]
-  - [11b]
-  - [12]
-  - [13]
+To have detailed information about each group of tests run, [see here.](old-metrics) (*computed in in March, 2023.*)
 
-- **DataStructureTest** - failed: 0, passed: 5, ignored: 1 of 6 test `(83.33%)`
-  - [5]
+#### JSVFA 2.0 metrics
 
-- **FactoryTest** - failed: 0, passed: 2, ignored: 1 of 3 test `(66.67%)`
-  - [3]
+> failed: 0, passed: 70, ignored: 32 of 102 tests
 
-- **InterTest** - failed: 0, passed:11, ignored: 3 of 14 test `(78.57%)`
-  - [6]
-  - [11] - flaky
-  - [12]
+|     Test      |   TP   | FP  | 
+|:-------------:|:------:|:---:|
+|   Aliasing    |  4/11  |  0  |   
+|     Array     |  7/9   |  4  |   
+|     Basic     | 57/59  |  1  |  
+|  Collection   |  4/14  |  0  | 
+| DataStructure |  4/5   |  1  |  
+|    Factory    |  3/3   |  1  |  
+|     Inter     | 12/16  |  0  |  
+|    Session    |  0/3   |  0  |  
+| StrongUpdate  |  1/1   |  2  |   
+|   **TOTAL**   | 92/121 |  9  |       
 
-- **SessionTest** - failed: 0, passed: 0, ignored: 3 of 3 test `(0%)`
-  - [1]
-  - [2]
-  - [3]
+- **Precision:** 0.91
+- **Recall:** 0.76
+- **F-score:** 0.83
 
-- **StrongUpdateTest** - failed: 0, passed: 3, ignored: 2 of 5 test `(60%)`
-  - [3]
-  - [5]
+To have detailed information about each group of tests run, [see here.](new-metrics)
+
+#### FLOWDROID metrics from [Paper](https://www.bodden.de/pubs/far+14flowdroid.pdf)
+
+|     Test      |   TP    | FP  | 
+|:-------------:|:-------:|:---:|
+|   Aliasing    |  11/11  |  0  |   
+|     Array     |   9/9   |  4  |   
+|     Basic     |  58/60  |  1  |  
+|  Collection   |  14/14  |  0  | 
+| DataStructure |   5/5   |  1  |  
+|    Factory    |   3/3   |  1  |  
+|     Inter     |  14/16  |  0  |  
+|    Session    |   3/3   |  0  |  
+| StrongUpdate  |   0/0   |  2  |   
+|   **TOTAL**   | 117/121 |  9  |   
+
+- **Precision:** 0.93
+- **Recall:** 0.97
+- **F-score:** 0.95
+
+**OBSERVATIONS**
+- Flowdroid is not taking in count the TP expected in StrongUpdate4;
+- Test Basic40 is commented in the test suite so the amount of TP differs from the original run by Flowdroid;
+
+#### METRICS SUMMARY
+
+| Frameworks | Precision | Recall | F-score | 
+|:----------:|:---------:|:------:|:-------:|
+|   JSVFA    |   0.93    |  0.71  |  0.81   | 
+| JSVFA 2.0  |   0.91    |  0.76  |  0.83   |
+|   Basic    |   0.93    |  0.97  |  0.95   |
 
 ### TAINTBENCH:
 
