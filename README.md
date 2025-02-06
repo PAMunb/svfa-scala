@@ -126,7 +126,15 @@ To have detailed information about each group of tests run, [see here.](new-metr
 
 **OBSERVATIONS**
 - Flowdroid is not taking in count the TP expected in StrongUpdate4;
-- Test Basic40 is commented in the test suite so the amount of TP differs from the original run by Flowdroid; 
+- Test Basic40 is commented in the test suite so the amount of TP differs from the original run by Flowdroid;
+
+#### METRICS SUMMARY
+
+| Frameworks | Precision | Recall | F-score | 
+|:----------:|:---------:|:------:|:-------:|
+|   JSVFA    |   0.93    |  0.71  |  0.81   | 
+| JSVFA 2.0  |   0.91    |  0.76  |  0.83   |
+|   Basic    |   0.93    |  0.97  |  0.95   |
 
 ### Taintbench: (WIP) 
 
