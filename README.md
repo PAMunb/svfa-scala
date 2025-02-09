@@ -103,6 +103,7 @@ To have detailed information about each group of tests run, [see here.](old-metr
 - **Precision:** 0.91
 - **Recall:** 0.76
 - **F-score:** 0.83
+- **Pass Rate:** 68.62%
 
 To have detailed information about each group of tests run, [see here.](new-metrics)
 
