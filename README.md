@@ -79,6 +79,7 @@ This benchmark was integrated because it is also used in the [FlowDroid Project]
 - **Precision:** 0.93
 - **Recall:** 0.71
 - **F-score:** 0.81
+- **Pass Rate:** 61.76%
 
 To have detailed information about each group of tests run, [see here.](old-metrics) (*computed in in March, 2023.*)
 
@@ -134,7 +135,7 @@ To have detailed information about each group of tests run, [see here.](new-metr
 |:----------:|:---------:|:------:|:-------:|
 |   JSVFA    |   0.93    |  0.71  |  0.81   | 
 | JSVFA 2.0  |   0.91    |  0.76  |  0.83   |
-|   Basic    |   0.93    |  0.97  |  0.95   |
+| FlowDroid  |   0.93    |  0.97  |  0.95   |
 
 ### Taintbench: (WIP) 
 
