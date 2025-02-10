@@ -132,11 +132,11 @@ To have detailed information about each group of tests run, [see here.](new-metr
 
 #### METRICS SUMMARY
 
-| Frameworks | Precision | Recall | F-score | 
-|:----------:|:---------:|:------:|:-------:|
-|   JSVFA    |   0.93    |  0.71  |  0.81   | 
-| JSVFA 2.0  |   0.91    |  0.76  |  0.83   |
-| FlowDroid  |   0.93    |  0.97  |  0.95   |
+| Frameworks | Precision | Recall | F-score | Pass Rate |
+|:----------:|:---------:|:------:|:-------:|----------:|
+|   JSVFA    |   0.93    |  0.71  |  0.81   |    61.76% | 
+| JSVFA 2.0  |   0.91    |  0.76  |  0.83   |    68.62% | 
+| FlowDroid  |   0.93    |  0.97  |  0.95   |         - | 
 
 ### Taintbench: (WIP) 
 
