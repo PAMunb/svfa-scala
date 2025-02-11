@@ -1,0 +1,15 @@
+name: 'Run tests'
+
+description: 'Run the unit tests'
+inputs:
+  TOKEN:
+    description: 'Access token for github'
+    required: true
+outputs:
+  failed_tests: # id of output
+    description: 'Number of failed unit tests'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.TOKEN }}
