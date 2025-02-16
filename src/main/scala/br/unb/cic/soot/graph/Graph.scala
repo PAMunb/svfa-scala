@@ -560,8 +560,8 @@ class Graph() {
       f(stmt)
     )
 
-  def reportConflicts(): scala.collection.Set[String] =
-    findConflictingPaths().map(p => p.toString)
+  def reportConflicts(useUniquePaths: Boolean = false): scala.collection.Set[String] =
+    findConflictingPaths(useUniquePaths).map(p => p.toString)
 
   def findConflictingPaths(useUniquePaths: Boolean): scala.collection.Set[?] = {
     if (fullGraph) {
