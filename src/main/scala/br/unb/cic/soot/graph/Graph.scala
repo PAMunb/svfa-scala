@@ -587,15 +587,11 @@ class Graph() {
       sourceNodes.foreach(source => {
         sinkNodes.foreach(sink => {
           val paths = findPath(source, sink)
-          // show paths
-//          paths.foreach(path => {
-//            println("[path]")
-//            path.foreach(println(_))
-//          })
-          conflicts = conflicts ++ paths
+          if (paths.nonEmpty) {
+            conflicts = conflicts ++ paths
+          }
         })
       })
-
       conflicts.filter(p => p.nonEmpty).toSet
     }
   }
