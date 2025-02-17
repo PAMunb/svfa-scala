@@ -79,6 +79,7 @@ This benchmark was integrated because it is also used in the [FlowDroid Project]
 - **Precision:** 0.93
 - **Recall:** 0.71
 - **F-score:** 0.81
+- **Pass Rate:** 61.76%
 
 To have detailed information about each group of tests run, [see here.](old-metrics) (*computed in in March, 2023.*)
 
@@ -102,6 +103,7 @@ To have detailed information about each group of tests run, [see here.](old-metr
 - **Precision:** 0.91
 - **Recall:** 0.76
 - **F-score:** 0.83
+- **Pass Rate:** 68.62%
 
 To have detailed information about each group of tests run, [see here.](new-metrics)
 
@@ -130,11 +132,11 @@ To have detailed information about each group of tests run, [see here.](new-metr
 
 #### METRICS SUMMARY
 
-| Frameworks | Precision | Recall | F-score | 
-|:----------:|:---------:|:------:|:-------:|
-|   JSVFA    |   0.93    |  0.71  |  0.81   | 
-| JSVFA 2.0  |   0.91    |  0.76  |  0.83   |
-|   Basic    |   0.93    |  0.97  |  0.95   |
+| Frameworks | Precision | Recall | F-score | Pass Rate |
+|:----------:|:---------:|:------:|:-------:|----------:|
+|   JSVFA    |   0.93    |  0.71  |  0.81   |    61.76% | 
+| JSVFA 2.0  |   0.91    |  0.76  |  0.83   |    68.62% | 
+| FlowDroid  |   0.93    |  0.97  |  0.95   |         - | 
 
 ### TAINTBENCH:
 
