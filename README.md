@@ -209,7 +209,7 @@ a good `recall(0.73)` value and a better `F-score(0.42)`.
 
 | Expected | Actual | TP  | FP  | Precision | Recall | F-score |
 |:--------:|:------:|:---:|:---:|:---------:|:------:|:-------:|
-|   186    |  453   | 135 | 318 |   0.30    |  0.73  |  0.42   |
+|   186    |  442   | 133 | 309 |   0.30    |  0.72  |  0.42   |
 
 
 - FLOWDROID metrics from Paper https://doi.org/10.1007/s10664-021-10013-5
